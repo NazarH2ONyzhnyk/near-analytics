@@ -639,6 +639,12 @@ video {
   text-align: center;
   --tw-text-opacity: 1;
   color: rgba(255, 255, 255, var(--tw-text-opacity));
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-duration: 200ms;
 }
 
 .btn:hover {
@@ -756,6 +762,26 @@ video {
 }
 
 .sticky {
+  position: sticky;
+}
+
+.hover\:static:hover {
+  position: static;
+}
+
+.hover\:fixed:hover {
+  position: fixed;
+}
+
+.hover\:absolute:hover {
+  position: absolute;
+}
+
+.hover\:relative:hover {
+  position: relative;
+}
+
+.hover\:sticky:hover {
   position: sticky;
 }
 
@@ -17473,6 +17499,424 @@ video {
   background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
 }
 
+.active\:bg-transparent:active {
+  background-color: transparent;
+}
+
+.active\:bg-current:active {
+  background-color: currentColor;
+}
+
+.active\:bg-black:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
+.active\:bg-white:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-50:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-100:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-200:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-400:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+
+.active\:bg-gray-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-50:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-100:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-200:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-400:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+}
+
+.active\:bg-red-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(127, 29, 29, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-50:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-100:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-200:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-400:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(180, 83, 9, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(146, 64, 14, var(--tw-bg-opacity));
+}
+
+.active\:bg-yellow-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(120, 53, 15, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-50:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-100:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-200:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-400:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(4, 120, 87, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(6, 95, 70, var(--tw-bg-opacity));
+}
+
+.active\:bg-green-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-50:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-100:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-200:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-400:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(30, 64, 175, var(--tw-bg-opacity));
+}
+
+.active\:bg-blue-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-50:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(238, 242, 255, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-100:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(224, 231, 255, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-200:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(165, 180, 252, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-400:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(129, 140, 248, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(55, 48, 163, var(--tw-bg-opacity));
+}
+
+.active\:bg-indigo-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-50:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 243, 255, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-100:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(237, 233, 254, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-200:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(221, 214, 254, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(196, 181, 253, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-400:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(167, 139, 250, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(109, 40, 217, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(91, 33, 182, var(--tw-bg-opacity));
+}
+
+.active\:bg-purple-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(76, 29, 149, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-50:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(253, 242, 248, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-100:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 231, 243, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-200:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(251, 207, 232, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-300:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-400:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(244, 114, 182, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-500:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-600:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(219, 39, 119, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-700:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(190, 24, 93, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(157, 23, 77, var(--tw-bg-opacity));
+}
+
+.active\:bg-pink-900:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+}
+
 .bg-opacity-0 {
   --tw-bg-opacity: 0;
 }
@@ -21438,6 +21882,146 @@ video {
   padding: 0.875rem;
 }
 
+.hover\:p-0:hover {
+  padding: 0px;
+}
+
+.hover\:p-1:hover {
+  padding: 0.25rem;
+}
+
+.hover\:p-2:hover {
+  padding: 0.5rem;
+}
+
+.hover\:p-3:hover {
+  padding: 0.75rem;
+}
+
+.hover\:p-4:hover {
+  padding: 1rem;
+}
+
+.hover\:p-5:hover {
+  padding: 1.25rem;
+}
+
+.hover\:p-6:hover {
+  padding: 1.5rem;
+}
+
+.hover\:p-7:hover {
+  padding: 1.75rem;
+}
+
+.hover\:p-8:hover {
+  padding: 2rem;
+}
+
+.hover\:p-9:hover {
+  padding: 2.25rem;
+}
+
+.hover\:p-10:hover {
+  padding: 2.5rem;
+}
+
+.hover\:p-11:hover {
+  padding: 2.75rem;
+}
+
+.hover\:p-12:hover {
+  padding: 3rem;
+}
+
+.hover\:p-14:hover {
+  padding: 3.5rem;
+}
+
+.hover\:p-16:hover {
+  padding: 4rem;
+}
+
+.hover\:p-20:hover {
+  padding: 5rem;
+}
+
+.hover\:p-24:hover {
+  padding: 6rem;
+}
+
+.hover\:p-28:hover {
+  padding: 7rem;
+}
+
+.hover\:p-32:hover {
+  padding: 8rem;
+}
+
+.hover\:p-36:hover {
+  padding: 9rem;
+}
+
+.hover\:p-40:hover {
+  padding: 10rem;
+}
+
+.hover\:p-44:hover {
+  padding: 11rem;
+}
+
+.hover\:p-48:hover {
+  padding: 12rem;
+}
+
+.hover\:p-52:hover {
+  padding: 13rem;
+}
+
+.hover\:p-56:hover {
+  padding: 14rem;
+}
+
+.hover\:p-60:hover {
+  padding: 15rem;
+}
+
+.hover\:p-64:hover {
+  padding: 16rem;
+}
+
+.hover\:p-72:hover {
+  padding: 18rem;
+}
+
+.hover\:p-80:hover {
+  padding: 20rem;
+}
+
+.hover\:p-96:hover {
+  padding: 24rem;
+}
+
+.hover\:p-px:hover {
+  padding: 1px;
+}
+
+.hover\:p-0\.5:hover {
+  padding: 0.125rem;
+}
+
+.hover\:p-1\.5:hover {
+  padding: 0.375rem;
+}
+
+.hover\:p-2\.5:hover {
+  padding: 0.625rem;
+}
+
+.hover\:p-3\.5:hover {
+  padding: 0.875rem;
+}
+
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -21784,6 +22368,356 @@ video {
 }
 
 .py-3\.5 {
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+
+.hover\:px-0:hover {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.hover\:px-1:hover {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.hover\:px-2:hover {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.hover\:px-3:hover {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.hover\:px-4:hover {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.hover\:px-5:hover {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.hover\:px-6:hover {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.hover\:px-7:hover {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.hover\:px-8:hover {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.hover\:px-9:hover {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.hover\:px-10:hover {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.hover\:px-11:hover {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.hover\:px-12:hover {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.hover\:px-14:hover {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+.hover\:px-16:hover {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.hover\:px-20:hover {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.hover\:px-24:hover {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.hover\:px-28:hover {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.hover\:px-32:hover {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+
+.hover\:px-36:hover {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.hover\:px-40:hover {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.hover\:px-44:hover {
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+.hover\:px-48:hover {
+  padding-left: 12rem;
+  padding-right: 12rem;
+}
+
+.hover\:px-52:hover {
+  padding-left: 13rem;
+  padding-right: 13rem;
+}
+
+.hover\:px-56:hover {
+  padding-left: 14rem;
+  padding-right: 14rem;
+}
+
+.hover\:px-60:hover {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.hover\:px-64:hover {
+  padding-left: 16rem;
+  padding-right: 16rem;
+}
+
+.hover\:px-72:hover {
+  padding-left: 18rem;
+  padding-right: 18rem;
+}
+
+.hover\:px-80:hover {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.hover\:px-96:hover {
+  padding-left: 24rem;
+  padding-right: 24rem;
+}
+
+.hover\:px-px:hover {
+  padding-left: 1px;
+  padding-right: 1px;
+}
+
+.hover\:px-0\.5:hover {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
+}
+
+.hover\:px-1\.5:hover {
+  padding-left: 0.375rem;
+  padding-right: 0.375rem;
+}
+
+.hover\:px-2\.5:hover {
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+}
+
+.hover\:px-3\.5:hover {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
+.hover\:py-0:hover {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.hover\:py-1:hover {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.hover\:py-2:hover {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.hover\:py-3:hover {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.hover\:py-4:hover {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.hover\:py-5:hover {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.hover\:py-6:hover {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.hover\:py-7:hover {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
+
+.hover\:py-8:hover {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.hover\:py-9:hover {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+
+.hover\:py-10:hover {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.hover\:py-11:hover {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
+.hover\:py-12:hover {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.hover\:py-14:hover {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.hover\:py-16:hover {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hover\:py-20:hover {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.hover\:py-24:hover {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.hover\:py-28:hover {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.hover\:py-32:hover {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.hover\:py-36:hover {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.hover\:py-40:hover {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.hover\:py-44:hover {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
+.hover\:py-48:hover {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+}
+
+.hover\:py-52:hover {
+  padding-top: 13rem;
+  padding-bottom: 13rem;
+}
+
+.hover\:py-56:hover {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+}
+
+.hover\:py-60:hover {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.hover\:py-64:hover {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.hover\:py-72:hover {
+  padding-top: 18rem;
+  padding-bottom: 18rem;
+}
+
+.hover\:py-80:hover {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+
+.hover\:py-96:hover {
+  padding-top: 24rem;
+  padding-bottom: 24rem;
+}
+
+.hover\:py-px:hover {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.hover\:py-0\.5:hover {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.hover\:py-1\.5:hover {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.hover\:py-2\.5:hover {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
+.hover\:py-3\.5:hover {
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
 }
@@ -22345,6 +23279,566 @@ video {
 }
 
 .pl-3\.5 {
+  padding-left: 0.875rem;
+}
+
+.hover\:pt-0:hover {
+  padding-top: 0px;
+}
+
+.hover\:pt-1:hover {
+  padding-top: 0.25rem;
+}
+
+.hover\:pt-2:hover {
+  padding-top: 0.5rem;
+}
+
+.hover\:pt-3:hover {
+  padding-top: 0.75rem;
+}
+
+.hover\:pt-4:hover {
+  padding-top: 1rem;
+}
+
+.hover\:pt-5:hover {
+  padding-top: 1.25rem;
+}
+
+.hover\:pt-6:hover {
+  padding-top: 1.5rem;
+}
+
+.hover\:pt-7:hover {
+  padding-top: 1.75rem;
+}
+
+.hover\:pt-8:hover {
+  padding-top: 2rem;
+}
+
+.hover\:pt-9:hover {
+  padding-top: 2.25rem;
+}
+
+.hover\:pt-10:hover {
+  padding-top: 2.5rem;
+}
+
+.hover\:pt-11:hover {
+  padding-top: 2.75rem;
+}
+
+.hover\:pt-12:hover {
+  padding-top: 3rem;
+}
+
+.hover\:pt-14:hover {
+  padding-top: 3.5rem;
+}
+
+.hover\:pt-16:hover {
+  padding-top: 4rem;
+}
+
+.hover\:pt-20:hover {
+  padding-top: 5rem;
+}
+
+.hover\:pt-24:hover {
+  padding-top: 6rem;
+}
+
+.hover\:pt-28:hover {
+  padding-top: 7rem;
+}
+
+.hover\:pt-32:hover {
+  padding-top: 8rem;
+}
+
+.hover\:pt-36:hover {
+  padding-top: 9rem;
+}
+
+.hover\:pt-40:hover {
+  padding-top: 10rem;
+}
+
+.hover\:pt-44:hover {
+  padding-top: 11rem;
+}
+
+.hover\:pt-48:hover {
+  padding-top: 12rem;
+}
+
+.hover\:pt-52:hover {
+  padding-top: 13rem;
+}
+
+.hover\:pt-56:hover {
+  padding-top: 14rem;
+}
+
+.hover\:pt-60:hover {
+  padding-top: 15rem;
+}
+
+.hover\:pt-64:hover {
+  padding-top: 16rem;
+}
+
+.hover\:pt-72:hover {
+  padding-top: 18rem;
+}
+
+.hover\:pt-80:hover {
+  padding-top: 20rem;
+}
+
+.hover\:pt-96:hover {
+  padding-top: 24rem;
+}
+
+.hover\:pt-px:hover {
+  padding-top: 1px;
+}
+
+.hover\:pt-0\.5:hover {
+  padding-top: 0.125rem;
+}
+
+.hover\:pt-1\.5:hover {
+  padding-top: 0.375rem;
+}
+
+.hover\:pt-2\.5:hover {
+  padding-top: 0.625rem;
+}
+
+.hover\:pt-3\.5:hover {
+  padding-top: 0.875rem;
+}
+
+.hover\:pr-0:hover {
+  padding-right: 0px;
+}
+
+.hover\:pr-1:hover {
+  padding-right: 0.25rem;
+}
+
+.hover\:pr-2:hover {
+  padding-right: 0.5rem;
+}
+
+.hover\:pr-3:hover {
+  padding-right: 0.75rem;
+}
+
+.hover\:pr-4:hover {
+  padding-right: 1rem;
+}
+
+.hover\:pr-5:hover {
+  padding-right: 1.25rem;
+}
+
+.hover\:pr-6:hover {
+  padding-right: 1.5rem;
+}
+
+.hover\:pr-7:hover {
+  padding-right: 1.75rem;
+}
+
+.hover\:pr-8:hover {
+  padding-right: 2rem;
+}
+
+.hover\:pr-9:hover {
+  padding-right: 2.25rem;
+}
+
+.hover\:pr-10:hover {
+  padding-right: 2.5rem;
+}
+
+.hover\:pr-11:hover {
+  padding-right: 2.75rem;
+}
+
+.hover\:pr-12:hover {
+  padding-right: 3rem;
+}
+
+.hover\:pr-14:hover {
+  padding-right: 3.5rem;
+}
+
+.hover\:pr-16:hover {
+  padding-right: 4rem;
+}
+
+.hover\:pr-20:hover {
+  padding-right: 5rem;
+}
+
+.hover\:pr-24:hover {
+  padding-right: 6rem;
+}
+
+.hover\:pr-28:hover {
+  padding-right: 7rem;
+}
+
+.hover\:pr-32:hover {
+  padding-right: 8rem;
+}
+
+.hover\:pr-36:hover {
+  padding-right: 9rem;
+}
+
+.hover\:pr-40:hover {
+  padding-right: 10rem;
+}
+
+.hover\:pr-44:hover {
+  padding-right: 11rem;
+}
+
+.hover\:pr-48:hover {
+  padding-right: 12rem;
+}
+
+.hover\:pr-52:hover {
+  padding-right: 13rem;
+}
+
+.hover\:pr-56:hover {
+  padding-right: 14rem;
+}
+
+.hover\:pr-60:hover {
+  padding-right: 15rem;
+}
+
+.hover\:pr-64:hover {
+  padding-right: 16rem;
+}
+
+.hover\:pr-72:hover {
+  padding-right: 18rem;
+}
+
+.hover\:pr-80:hover {
+  padding-right: 20rem;
+}
+
+.hover\:pr-96:hover {
+  padding-right: 24rem;
+}
+
+.hover\:pr-px:hover {
+  padding-right: 1px;
+}
+
+.hover\:pr-0\.5:hover {
+  padding-right: 0.125rem;
+}
+
+.hover\:pr-1\.5:hover {
+  padding-right: 0.375rem;
+}
+
+.hover\:pr-2\.5:hover {
+  padding-right: 0.625rem;
+}
+
+.hover\:pr-3\.5:hover {
+  padding-right: 0.875rem;
+}
+
+.hover\:pb-0:hover {
+  padding-bottom: 0px;
+}
+
+.hover\:pb-1:hover {
+  padding-bottom: 0.25rem;
+}
+
+.hover\:pb-2:hover {
+  padding-bottom: 0.5rem;
+}
+
+.hover\:pb-3:hover {
+  padding-bottom: 0.75rem;
+}
+
+.hover\:pb-4:hover {
+  padding-bottom: 1rem;
+}
+
+.hover\:pb-5:hover {
+  padding-bottom: 1.25rem;
+}
+
+.hover\:pb-6:hover {
+  padding-bottom: 1.5rem;
+}
+
+.hover\:pb-7:hover {
+  padding-bottom: 1.75rem;
+}
+
+.hover\:pb-8:hover {
+  padding-bottom: 2rem;
+}
+
+.hover\:pb-9:hover {
+  padding-bottom: 2.25rem;
+}
+
+.hover\:pb-10:hover {
+  padding-bottom: 2.5rem;
+}
+
+.hover\:pb-11:hover {
+  padding-bottom: 2.75rem;
+}
+
+.hover\:pb-12:hover {
+  padding-bottom: 3rem;
+}
+
+.hover\:pb-14:hover {
+  padding-bottom: 3.5rem;
+}
+
+.hover\:pb-16:hover {
+  padding-bottom: 4rem;
+}
+
+.hover\:pb-20:hover {
+  padding-bottom: 5rem;
+}
+
+.hover\:pb-24:hover {
+  padding-bottom: 6rem;
+}
+
+.hover\:pb-28:hover {
+  padding-bottom: 7rem;
+}
+
+.hover\:pb-32:hover {
+  padding-bottom: 8rem;
+}
+
+.hover\:pb-36:hover {
+  padding-bottom: 9rem;
+}
+
+.hover\:pb-40:hover {
+  padding-bottom: 10rem;
+}
+
+.hover\:pb-44:hover {
+  padding-bottom: 11rem;
+}
+
+.hover\:pb-48:hover {
+  padding-bottom: 12rem;
+}
+
+.hover\:pb-52:hover {
+  padding-bottom: 13rem;
+}
+
+.hover\:pb-56:hover {
+  padding-bottom: 14rem;
+}
+
+.hover\:pb-60:hover {
+  padding-bottom: 15rem;
+}
+
+.hover\:pb-64:hover {
+  padding-bottom: 16rem;
+}
+
+.hover\:pb-72:hover {
+  padding-bottom: 18rem;
+}
+
+.hover\:pb-80:hover {
+  padding-bottom: 20rem;
+}
+
+.hover\:pb-96:hover {
+  padding-bottom: 24rem;
+}
+
+.hover\:pb-px:hover {
+  padding-bottom: 1px;
+}
+
+.hover\:pb-0\.5:hover {
+  padding-bottom: 0.125rem;
+}
+
+.hover\:pb-1\.5:hover {
+  padding-bottom: 0.375rem;
+}
+
+.hover\:pb-2\.5:hover {
+  padding-bottom: 0.625rem;
+}
+
+.hover\:pb-3\.5:hover {
+  padding-bottom: 0.875rem;
+}
+
+.hover\:pl-0:hover {
+  padding-left: 0px;
+}
+
+.hover\:pl-1:hover {
+  padding-left: 0.25rem;
+}
+
+.hover\:pl-2:hover {
+  padding-left: 0.5rem;
+}
+
+.hover\:pl-3:hover {
+  padding-left: 0.75rem;
+}
+
+.hover\:pl-4:hover {
+  padding-left: 1rem;
+}
+
+.hover\:pl-5:hover {
+  padding-left: 1.25rem;
+}
+
+.hover\:pl-6:hover {
+  padding-left: 1.5rem;
+}
+
+.hover\:pl-7:hover {
+  padding-left: 1.75rem;
+}
+
+.hover\:pl-8:hover {
+  padding-left: 2rem;
+}
+
+.hover\:pl-9:hover {
+  padding-left: 2.25rem;
+}
+
+.hover\:pl-10:hover {
+  padding-left: 2.5rem;
+}
+
+.hover\:pl-11:hover {
+  padding-left: 2.75rem;
+}
+
+.hover\:pl-12:hover {
+  padding-left: 3rem;
+}
+
+.hover\:pl-14:hover {
+  padding-left: 3.5rem;
+}
+
+.hover\:pl-16:hover {
+  padding-left: 4rem;
+}
+
+.hover\:pl-20:hover {
+  padding-left: 5rem;
+}
+
+.hover\:pl-24:hover {
+  padding-left: 6rem;
+}
+
+.hover\:pl-28:hover {
+  padding-left: 7rem;
+}
+
+.hover\:pl-32:hover {
+  padding-left: 8rem;
+}
+
+.hover\:pl-36:hover {
+  padding-left: 9rem;
+}
+
+.hover\:pl-40:hover {
+  padding-left: 10rem;
+}
+
+.hover\:pl-44:hover {
+  padding-left: 11rem;
+}
+
+.hover\:pl-48:hover {
+  padding-left: 12rem;
+}
+
+.hover\:pl-52:hover {
+  padding-left: 13rem;
+}
+
+.hover\:pl-56:hover {
+  padding-left: 14rem;
+}
+
+.hover\:pl-60:hover {
+  padding-left: 15rem;
+}
+
+.hover\:pl-64:hover {
+  padding-left: 16rem;
+}
+
+.hover\:pl-72:hover {
+  padding-left: 18rem;
+}
+
+.hover\:pl-80:hover {
+  padding-left: 20rem;
+}
+
+.hover\:pl-96:hover {
+  padding-left: 24rem;
+}
+
+.hover\:pl-px:hover {
+  padding-left: 1px;
+}
+
+.hover\:pl-0\.5:hover {
+  padding-left: 0.125rem;
+}
+
+.hover\:pl-1\.5:hover {
+  padding-left: 0.375rem;
+}
+
+.hover\:pl-2\.5:hover {
+  padding-left: 0.625rem;
+}
+
+.hover\:pl-3\.5:hover {
   padding-left: 0.875rem;
 }
 
@@ -28610,6 +30104,46 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.active\:shadow-sm:active {
+  --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:shadow:active {
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:shadow-md:active {
+  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:shadow-lg:active {
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:shadow-xl:active {
+  --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:shadow-2xl:active {
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:shadow-inner:active {
+  --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.active\:shadow-none:active {
+  --tw-shadow: 0 0 #0000;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -32061,6 +33595,26 @@ video {
   }
 
   .sm\:sticky {
+    position: sticky;
+  }
+
+  .sm\:hover\:static:hover {
+    position: static;
+  }
+
+  .sm\:hover\:fixed:hover {
+    position: fixed;
+  }
+
+  .sm\:hover\:absolute:hover {
+    position: absolute;
+  }
+
+  .sm\:hover\:relative:hover {
+    position: relative;
+  }
+
+  .sm\:hover\:sticky:hover {
     position: sticky;
   }
 
@@ -48712,6 +50266,424 @@ video {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .sm\:active\:bg-transparent:active {
+    background-color: transparent;
+  }
+
+  .sm\:active\:bg-current:active {
+    background-color: currentColor;
+  }
+
+  .sm\:active\:bg-black:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-white:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-gray-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-red-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(127, 29, 29, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(180, 83, 9, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(146, 64, 14, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-yellow-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(120, 53, 15, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(4, 120, 87, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 95, 70, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-green-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 64, 175, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-blue-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(238, 242, 255, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 231, 255, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(165, 180, 252, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(129, 140, 248, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 48, 163, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-indigo-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 243, 255, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 233, 254, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(221, 214, 254, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(196, 181, 253, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 139, 250, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(109, 40, 217, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(91, 33, 182, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-purple-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(76, 29, 149, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 242, 248, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 231, 243, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 207, 232, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(244, 114, 182, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 39, 119, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(190, 24, 93, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(157, 23, 77, var(--tw-bg-opacity));
+  }
+
+  .sm\:active\:bg-pink-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
   .sm\:bg-opacity-0 {
     --tw-bg-opacity: 0;
   }
@@ -52677,6 +54649,146 @@ video {
     padding: 0.875rem;
   }
 
+  .sm\:hover\:p-0:hover {
+    padding: 0px;
+  }
+
+  .sm\:hover\:p-1:hover {
+    padding: 0.25rem;
+  }
+
+  .sm\:hover\:p-2:hover {
+    padding: 0.5rem;
+  }
+
+  .sm\:hover\:p-3:hover {
+    padding: 0.75rem;
+  }
+
+  .sm\:hover\:p-4:hover {
+    padding: 1rem;
+  }
+
+  .sm\:hover\:p-5:hover {
+    padding: 1.25rem;
+  }
+
+  .sm\:hover\:p-6:hover {
+    padding: 1.5rem;
+  }
+
+  .sm\:hover\:p-7:hover {
+    padding: 1.75rem;
+  }
+
+  .sm\:hover\:p-8:hover {
+    padding: 2rem;
+  }
+
+  .sm\:hover\:p-9:hover {
+    padding: 2.25rem;
+  }
+
+  .sm\:hover\:p-10:hover {
+    padding: 2.5rem;
+  }
+
+  .sm\:hover\:p-11:hover {
+    padding: 2.75rem;
+  }
+
+  .sm\:hover\:p-12:hover {
+    padding: 3rem;
+  }
+
+  .sm\:hover\:p-14:hover {
+    padding: 3.5rem;
+  }
+
+  .sm\:hover\:p-16:hover {
+    padding: 4rem;
+  }
+
+  .sm\:hover\:p-20:hover {
+    padding: 5rem;
+  }
+
+  .sm\:hover\:p-24:hover {
+    padding: 6rem;
+  }
+
+  .sm\:hover\:p-28:hover {
+    padding: 7rem;
+  }
+
+  .sm\:hover\:p-32:hover {
+    padding: 8rem;
+  }
+
+  .sm\:hover\:p-36:hover {
+    padding: 9rem;
+  }
+
+  .sm\:hover\:p-40:hover {
+    padding: 10rem;
+  }
+
+  .sm\:hover\:p-44:hover {
+    padding: 11rem;
+  }
+
+  .sm\:hover\:p-48:hover {
+    padding: 12rem;
+  }
+
+  .sm\:hover\:p-52:hover {
+    padding: 13rem;
+  }
+
+  .sm\:hover\:p-56:hover {
+    padding: 14rem;
+  }
+
+  .sm\:hover\:p-60:hover {
+    padding: 15rem;
+  }
+
+  .sm\:hover\:p-64:hover {
+    padding: 16rem;
+  }
+
+  .sm\:hover\:p-72:hover {
+    padding: 18rem;
+  }
+
+  .sm\:hover\:p-80:hover {
+    padding: 20rem;
+  }
+
+  .sm\:hover\:p-96:hover {
+    padding: 24rem;
+  }
+
+  .sm\:hover\:p-px:hover {
+    padding: 1px;
+  }
+
+  .sm\:hover\:p-0\.5:hover {
+    padding: 0.125rem;
+  }
+
+  .sm\:hover\:p-1\.5:hover {
+    padding: 0.375rem;
+  }
+
+  .sm\:hover\:p-2\.5:hover {
+    padding: 0.625rem;
+  }
+
+  .sm\:hover\:p-3\.5:hover {
+    padding: 0.875rem;
+  }
+
   .sm\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -53023,6 +55135,356 @@ video {
   }
 
   .sm\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .sm\:hover\:px-0:hover {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .sm\:hover\:px-1:hover {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .sm\:hover\:px-2:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .sm\:hover\:px-3:hover {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sm\:hover\:px-4:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:hover\:px-5:hover {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .sm\:hover\:px-6:hover {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:hover\:px-7:hover {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .sm\:hover\:px-8:hover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:hover\:px-9:hover {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .sm\:hover\:px-10:hover {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .sm\:hover\:px-11:hover {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
+  .sm\:hover\:px-12:hover {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .sm\:hover\:px-14:hover {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .sm\:hover\:px-16:hover {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .sm\:hover\:px-20:hover {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .sm\:hover\:px-24:hover {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .sm\:hover\:px-28:hover {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .sm\:hover\:px-32:hover {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .sm\:hover\:px-36:hover {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .sm\:hover\:px-40:hover {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .sm\:hover\:px-44:hover {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+
+  .sm\:hover\:px-48:hover {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .sm\:hover\:px-52:hover {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
+  .sm\:hover\:px-56:hover {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+
+  .sm\:hover\:px-60:hover {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .sm\:hover\:px-64:hover {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  .sm\:hover\:px-72:hover {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+
+  .sm\:hover\:px-80:hover {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .sm\:hover\:px-96:hover {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .sm\:hover\:px-px:hover {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .sm\:hover\:px-0\.5:hover {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .sm\:hover\:px-1\.5:hover {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+  }
+
+  .sm\:hover\:px-2\.5:hover {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .sm\:hover\:px-3\.5:hover {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
+  .sm\:hover\:py-0:hover {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .sm\:hover\:py-1:hover {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .sm\:hover\:py-2:hover {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .sm\:hover\:py-3:hover {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .sm\:hover\:py-4:hover {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .sm\:hover\:py-5:hover {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .sm\:hover\:py-6:hover {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:hover\:py-7:hover {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .sm\:hover\:py-8:hover {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .sm\:hover\:py-9:hover {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .sm\:hover\:py-10:hover {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:hover\:py-11:hover {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .sm\:hover\:py-12:hover {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .sm\:hover\:py-14:hover {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:hover\:py-16:hover {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sm\:hover\:py-20:hover {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .sm\:hover\:py-24:hover {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .sm\:hover\:py-28:hover {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .sm\:hover\:py-32:hover {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .sm\:hover\:py-36:hover {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .sm\:hover\:py-40:hover {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .sm\:hover\:py-44:hover {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+
+  .sm\:hover\:py-48:hover {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .sm\:hover\:py-52:hover {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .sm\:hover\:py-56:hover {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+  }
+
+  .sm\:hover\:py-60:hover {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  .sm\:hover\:py-64:hover {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .sm\:hover\:py-72:hover {
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+  }
+
+  .sm\:hover\:py-80:hover {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  .sm\:hover\:py-96:hover {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+  }
+
+  .sm\:hover\:py-px:hover {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .sm\:hover\:py-0\.5:hover {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .sm\:hover\:py-1\.5:hover {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+
+  .sm\:hover\:py-2\.5:hover {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .sm\:hover\:py-3\.5:hover {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
   }
@@ -53584,6 +56046,566 @@ video {
   }
 
   .sm\:pl-3\.5 {
+    padding-left: 0.875rem;
+  }
+
+  .sm\:hover\:pt-0:hover {
+    padding-top: 0px;
+  }
+
+  .sm\:hover\:pt-1:hover {
+    padding-top: 0.25rem;
+  }
+
+  .sm\:hover\:pt-2:hover {
+    padding-top: 0.5rem;
+  }
+
+  .sm\:hover\:pt-3:hover {
+    padding-top: 0.75rem;
+  }
+
+  .sm\:hover\:pt-4:hover {
+    padding-top: 1rem;
+  }
+
+  .sm\:hover\:pt-5:hover {
+    padding-top: 1.25rem;
+  }
+
+  .sm\:hover\:pt-6:hover {
+    padding-top: 1.5rem;
+  }
+
+  .sm\:hover\:pt-7:hover {
+    padding-top: 1.75rem;
+  }
+
+  .sm\:hover\:pt-8:hover {
+    padding-top: 2rem;
+  }
+
+  .sm\:hover\:pt-9:hover {
+    padding-top: 2.25rem;
+  }
+
+  .sm\:hover\:pt-10:hover {
+    padding-top: 2.5rem;
+  }
+
+  .sm\:hover\:pt-11:hover {
+    padding-top: 2.75rem;
+  }
+
+  .sm\:hover\:pt-12:hover {
+    padding-top: 3rem;
+  }
+
+  .sm\:hover\:pt-14:hover {
+    padding-top: 3.5rem;
+  }
+
+  .sm\:hover\:pt-16:hover {
+    padding-top: 4rem;
+  }
+
+  .sm\:hover\:pt-20:hover {
+    padding-top: 5rem;
+  }
+
+  .sm\:hover\:pt-24:hover {
+    padding-top: 6rem;
+  }
+
+  .sm\:hover\:pt-28:hover {
+    padding-top: 7rem;
+  }
+
+  .sm\:hover\:pt-32:hover {
+    padding-top: 8rem;
+  }
+
+  .sm\:hover\:pt-36:hover {
+    padding-top: 9rem;
+  }
+
+  .sm\:hover\:pt-40:hover {
+    padding-top: 10rem;
+  }
+
+  .sm\:hover\:pt-44:hover {
+    padding-top: 11rem;
+  }
+
+  .sm\:hover\:pt-48:hover {
+    padding-top: 12rem;
+  }
+
+  .sm\:hover\:pt-52:hover {
+    padding-top: 13rem;
+  }
+
+  .sm\:hover\:pt-56:hover {
+    padding-top: 14rem;
+  }
+
+  .sm\:hover\:pt-60:hover {
+    padding-top: 15rem;
+  }
+
+  .sm\:hover\:pt-64:hover {
+    padding-top: 16rem;
+  }
+
+  .sm\:hover\:pt-72:hover {
+    padding-top: 18rem;
+  }
+
+  .sm\:hover\:pt-80:hover {
+    padding-top: 20rem;
+  }
+
+  .sm\:hover\:pt-96:hover {
+    padding-top: 24rem;
+  }
+
+  .sm\:hover\:pt-px:hover {
+    padding-top: 1px;
+  }
+
+  .sm\:hover\:pt-0\.5:hover {
+    padding-top: 0.125rem;
+  }
+
+  .sm\:hover\:pt-1\.5:hover {
+    padding-top: 0.375rem;
+  }
+
+  .sm\:hover\:pt-2\.5:hover {
+    padding-top: 0.625rem;
+  }
+
+  .sm\:hover\:pt-3\.5:hover {
+    padding-top: 0.875rem;
+  }
+
+  .sm\:hover\:pr-0:hover {
+    padding-right: 0px;
+  }
+
+  .sm\:hover\:pr-1:hover {
+    padding-right: 0.25rem;
+  }
+
+  .sm\:hover\:pr-2:hover {
+    padding-right: 0.5rem;
+  }
+
+  .sm\:hover\:pr-3:hover {
+    padding-right: 0.75rem;
+  }
+
+  .sm\:hover\:pr-4:hover {
+    padding-right: 1rem;
+  }
+
+  .sm\:hover\:pr-5:hover {
+    padding-right: 1.25rem;
+  }
+
+  .sm\:hover\:pr-6:hover {
+    padding-right: 1.5rem;
+  }
+
+  .sm\:hover\:pr-7:hover {
+    padding-right: 1.75rem;
+  }
+
+  .sm\:hover\:pr-8:hover {
+    padding-right: 2rem;
+  }
+
+  .sm\:hover\:pr-9:hover {
+    padding-right: 2.25rem;
+  }
+
+  .sm\:hover\:pr-10:hover {
+    padding-right: 2.5rem;
+  }
+
+  .sm\:hover\:pr-11:hover {
+    padding-right: 2.75rem;
+  }
+
+  .sm\:hover\:pr-12:hover {
+    padding-right: 3rem;
+  }
+
+  .sm\:hover\:pr-14:hover {
+    padding-right: 3.5rem;
+  }
+
+  .sm\:hover\:pr-16:hover {
+    padding-right: 4rem;
+  }
+
+  .sm\:hover\:pr-20:hover {
+    padding-right: 5rem;
+  }
+
+  .sm\:hover\:pr-24:hover {
+    padding-right: 6rem;
+  }
+
+  .sm\:hover\:pr-28:hover {
+    padding-right: 7rem;
+  }
+
+  .sm\:hover\:pr-32:hover {
+    padding-right: 8rem;
+  }
+
+  .sm\:hover\:pr-36:hover {
+    padding-right: 9rem;
+  }
+
+  .sm\:hover\:pr-40:hover {
+    padding-right: 10rem;
+  }
+
+  .sm\:hover\:pr-44:hover {
+    padding-right: 11rem;
+  }
+
+  .sm\:hover\:pr-48:hover {
+    padding-right: 12rem;
+  }
+
+  .sm\:hover\:pr-52:hover {
+    padding-right: 13rem;
+  }
+
+  .sm\:hover\:pr-56:hover {
+    padding-right: 14rem;
+  }
+
+  .sm\:hover\:pr-60:hover {
+    padding-right: 15rem;
+  }
+
+  .sm\:hover\:pr-64:hover {
+    padding-right: 16rem;
+  }
+
+  .sm\:hover\:pr-72:hover {
+    padding-right: 18rem;
+  }
+
+  .sm\:hover\:pr-80:hover {
+    padding-right: 20rem;
+  }
+
+  .sm\:hover\:pr-96:hover {
+    padding-right: 24rem;
+  }
+
+  .sm\:hover\:pr-px:hover {
+    padding-right: 1px;
+  }
+
+  .sm\:hover\:pr-0\.5:hover {
+    padding-right: 0.125rem;
+  }
+
+  .sm\:hover\:pr-1\.5:hover {
+    padding-right: 0.375rem;
+  }
+
+  .sm\:hover\:pr-2\.5:hover {
+    padding-right: 0.625rem;
+  }
+
+  .sm\:hover\:pr-3\.5:hover {
+    padding-right: 0.875rem;
+  }
+
+  .sm\:hover\:pb-0:hover {
+    padding-bottom: 0px;
+  }
+
+  .sm\:hover\:pb-1:hover {
+    padding-bottom: 0.25rem;
+  }
+
+  .sm\:hover\:pb-2:hover {
+    padding-bottom: 0.5rem;
+  }
+
+  .sm\:hover\:pb-3:hover {
+    padding-bottom: 0.75rem;
+  }
+
+  .sm\:hover\:pb-4:hover {
+    padding-bottom: 1rem;
+  }
+
+  .sm\:hover\:pb-5:hover {
+    padding-bottom: 1.25rem;
+  }
+
+  .sm\:hover\:pb-6:hover {
+    padding-bottom: 1.5rem;
+  }
+
+  .sm\:hover\:pb-7:hover {
+    padding-bottom: 1.75rem;
+  }
+
+  .sm\:hover\:pb-8:hover {
+    padding-bottom: 2rem;
+  }
+
+  .sm\:hover\:pb-9:hover {
+    padding-bottom: 2.25rem;
+  }
+
+  .sm\:hover\:pb-10:hover {
+    padding-bottom: 2.5rem;
+  }
+
+  .sm\:hover\:pb-11:hover {
+    padding-bottom: 2.75rem;
+  }
+
+  .sm\:hover\:pb-12:hover {
+    padding-bottom: 3rem;
+  }
+
+  .sm\:hover\:pb-14:hover {
+    padding-bottom: 3.5rem;
+  }
+
+  .sm\:hover\:pb-16:hover {
+    padding-bottom: 4rem;
+  }
+
+  .sm\:hover\:pb-20:hover {
+    padding-bottom: 5rem;
+  }
+
+  .sm\:hover\:pb-24:hover {
+    padding-bottom: 6rem;
+  }
+
+  .sm\:hover\:pb-28:hover {
+    padding-bottom: 7rem;
+  }
+
+  .sm\:hover\:pb-32:hover {
+    padding-bottom: 8rem;
+  }
+
+  .sm\:hover\:pb-36:hover {
+    padding-bottom: 9rem;
+  }
+
+  .sm\:hover\:pb-40:hover {
+    padding-bottom: 10rem;
+  }
+
+  .sm\:hover\:pb-44:hover {
+    padding-bottom: 11rem;
+  }
+
+  .sm\:hover\:pb-48:hover {
+    padding-bottom: 12rem;
+  }
+
+  .sm\:hover\:pb-52:hover {
+    padding-bottom: 13rem;
+  }
+
+  .sm\:hover\:pb-56:hover {
+    padding-bottom: 14rem;
+  }
+
+  .sm\:hover\:pb-60:hover {
+    padding-bottom: 15rem;
+  }
+
+  .sm\:hover\:pb-64:hover {
+    padding-bottom: 16rem;
+  }
+
+  .sm\:hover\:pb-72:hover {
+    padding-bottom: 18rem;
+  }
+
+  .sm\:hover\:pb-80:hover {
+    padding-bottom: 20rem;
+  }
+
+  .sm\:hover\:pb-96:hover {
+    padding-bottom: 24rem;
+  }
+
+  .sm\:hover\:pb-px:hover {
+    padding-bottom: 1px;
+  }
+
+  .sm\:hover\:pb-0\.5:hover {
+    padding-bottom: 0.125rem;
+  }
+
+  .sm\:hover\:pb-1\.5:hover {
+    padding-bottom: 0.375rem;
+  }
+
+  .sm\:hover\:pb-2\.5:hover {
+    padding-bottom: 0.625rem;
+  }
+
+  .sm\:hover\:pb-3\.5:hover {
+    padding-bottom: 0.875rem;
+  }
+
+  .sm\:hover\:pl-0:hover {
+    padding-left: 0px;
+  }
+
+  .sm\:hover\:pl-1:hover {
+    padding-left: 0.25rem;
+  }
+
+  .sm\:hover\:pl-2:hover {
+    padding-left: 0.5rem;
+  }
+
+  .sm\:hover\:pl-3:hover {
+    padding-left: 0.75rem;
+  }
+
+  .sm\:hover\:pl-4:hover {
+    padding-left: 1rem;
+  }
+
+  .sm\:hover\:pl-5:hover {
+    padding-left: 1.25rem;
+  }
+
+  .sm\:hover\:pl-6:hover {
+    padding-left: 1.5rem;
+  }
+
+  .sm\:hover\:pl-7:hover {
+    padding-left: 1.75rem;
+  }
+
+  .sm\:hover\:pl-8:hover {
+    padding-left: 2rem;
+  }
+
+  .sm\:hover\:pl-9:hover {
+    padding-left: 2.25rem;
+  }
+
+  .sm\:hover\:pl-10:hover {
+    padding-left: 2.5rem;
+  }
+
+  .sm\:hover\:pl-11:hover {
+    padding-left: 2.75rem;
+  }
+
+  .sm\:hover\:pl-12:hover {
+    padding-left: 3rem;
+  }
+
+  .sm\:hover\:pl-14:hover {
+    padding-left: 3.5rem;
+  }
+
+  .sm\:hover\:pl-16:hover {
+    padding-left: 4rem;
+  }
+
+  .sm\:hover\:pl-20:hover {
+    padding-left: 5rem;
+  }
+
+  .sm\:hover\:pl-24:hover {
+    padding-left: 6rem;
+  }
+
+  .sm\:hover\:pl-28:hover {
+    padding-left: 7rem;
+  }
+
+  .sm\:hover\:pl-32:hover {
+    padding-left: 8rem;
+  }
+
+  .sm\:hover\:pl-36:hover {
+    padding-left: 9rem;
+  }
+
+  .sm\:hover\:pl-40:hover {
+    padding-left: 10rem;
+  }
+
+  .sm\:hover\:pl-44:hover {
+    padding-left: 11rem;
+  }
+
+  .sm\:hover\:pl-48:hover {
+    padding-left: 12rem;
+  }
+
+  .sm\:hover\:pl-52:hover {
+    padding-left: 13rem;
+  }
+
+  .sm\:hover\:pl-56:hover {
+    padding-left: 14rem;
+  }
+
+  .sm\:hover\:pl-60:hover {
+    padding-left: 15rem;
+  }
+
+  .sm\:hover\:pl-64:hover {
+    padding-left: 16rem;
+  }
+
+  .sm\:hover\:pl-72:hover {
+    padding-left: 18rem;
+  }
+
+  .sm\:hover\:pl-80:hover {
+    padding-left: 20rem;
+  }
+
+  .sm\:hover\:pl-96:hover {
+    padding-left: 24rem;
+  }
+
+  .sm\:hover\:pl-px:hover {
+    padding-left: 1px;
+  }
+
+  .sm\:hover\:pl-0\.5:hover {
+    padding-left: 0.125rem;
+  }
+
+  .sm\:hover\:pl-1\.5:hover {
+    padding-left: 0.375rem;
+  }
+
+  .sm\:hover\:pl-2\.5:hover {
+    padding-left: 0.625rem;
+  }
+
+  .sm\:hover\:pl-3\.5:hover {
     padding-left: 0.875rem;
   }
 
@@ -59845,6 +62867,46 @@ video {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
+  .sm\:active\:shadow-sm:active {
+    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .sm\:active\:shadow:active {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .sm\:active\:shadow-md:active {
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .sm\:active\:shadow-lg:active {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .sm\:active\:shadow-xl:active {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .sm\:active\:shadow-2xl:active {
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .sm\:active\:shadow-inner:active {
+    --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .sm\:active\:shadow-none:active {
+    --tw-shadow: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
   .sm\:outline-none {
     outline: 2px solid transparent;
     outline-offset: 2px;
@@ -63288,6 +66350,26 @@ video {
   }
 
   .md\:sticky {
+    position: sticky;
+  }
+
+  .md\:hover\:static:hover {
+    position: static;
+  }
+
+  .md\:hover\:fixed:hover {
+    position: fixed;
+  }
+
+  .md\:hover\:absolute:hover {
+    position: absolute;
+  }
+
+  .md\:hover\:relative:hover {
+    position: relative;
+  }
+
+  .md\:hover\:sticky:hover {
     position: sticky;
   }
 
@@ -79939,6 +83021,424 @@ video {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .md\:active\:bg-transparent:active {
+    background-color: transparent;
+  }
+
+  .md\:active\:bg-current:active {
+    background-color: currentColor;
+  }
+
+  .md\:active\:bg-black:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-white:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-gray-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-red-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(127, 29, 29, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(180, 83, 9, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(146, 64, 14, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-yellow-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(120, 53, 15, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(4, 120, 87, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 95, 70, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-green-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 64, 175, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-blue-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(238, 242, 255, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 231, 255, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(165, 180, 252, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(129, 140, 248, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 48, 163, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-indigo-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 243, 255, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 233, 254, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(221, 214, 254, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(196, 181, 253, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 139, 250, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(109, 40, 217, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(91, 33, 182, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-purple-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(76, 29, 149, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 242, 248, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 231, 243, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 207, 232, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(244, 114, 182, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 39, 119, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(190, 24, 93, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(157, 23, 77, var(--tw-bg-opacity));
+  }
+
+  .md\:active\:bg-pink-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
   .md\:bg-opacity-0 {
     --tw-bg-opacity: 0;
   }
@@ -83904,6 +87404,146 @@ video {
     padding: 0.875rem;
   }
 
+  .md\:hover\:p-0:hover {
+    padding: 0px;
+  }
+
+  .md\:hover\:p-1:hover {
+    padding: 0.25rem;
+  }
+
+  .md\:hover\:p-2:hover {
+    padding: 0.5rem;
+  }
+
+  .md\:hover\:p-3:hover {
+    padding: 0.75rem;
+  }
+
+  .md\:hover\:p-4:hover {
+    padding: 1rem;
+  }
+
+  .md\:hover\:p-5:hover {
+    padding: 1.25rem;
+  }
+
+  .md\:hover\:p-6:hover {
+    padding: 1.5rem;
+  }
+
+  .md\:hover\:p-7:hover {
+    padding: 1.75rem;
+  }
+
+  .md\:hover\:p-8:hover {
+    padding: 2rem;
+  }
+
+  .md\:hover\:p-9:hover {
+    padding: 2.25rem;
+  }
+
+  .md\:hover\:p-10:hover {
+    padding: 2.5rem;
+  }
+
+  .md\:hover\:p-11:hover {
+    padding: 2.75rem;
+  }
+
+  .md\:hover\:p-12:hover {
+    padding: 3rem;
+  }
+
+  .md\:hover\:p-14:hover {
+    padding: 3.5rem;
+  }
+
+  .md\:hover\:p-16:hover {
+    padding: 4rem;
+  }
+
+  .md\:hover\:p-20:hover {
+    padding: 5rem;
+  }
+
+  .md\:hover\:p-24:hover {
+    padding: 6rem;
+  }
+
+  .md\:hover\:p-28:hover {
+    padding: 7rem;
+  }
+
+  .md\:hover\:p-32:hover {
+    padding: 8rem;
+  }
+
+  .md\:hover\:p-36:hover {
+    padding: 9rem;
+  }
+
+  .md\:hover\:p-40:hover {
+    padding: 10rem;
+  }
+
+  .md\:hover\:p-44:hover {
+    padding: 11rem;
+  }
+
+  .md\:hover\:p-48:hover {
+    padding: 12rem;
+  }
+
+  .md\:hover\:p-52:hover {
+    padding: 13rem;
+  }
+
+  .md\:hover\:p-56:hover {
+    padding: 14rem;
+  }
+
+  .md\:hover\:p-60:hover {
+    padding: 15rem;
+  }
+
+  .md\:hover\:p-64:hover {
+    padding: 16rem;
+  }
+
+  .md\:hover\:p-72:hover {
+    padding: 18rem;
+  }
+
+  .md\:hover\:p-80:hover {
+    padding: 20rem;
+  }
+
+  .md\:hover\:p-96:hover {
+    padding: 24rem;
+  }
+
+  .md\:hover\:p-px:hover {
+    padding: 1px;
+  }
+
+  .md\:hover\:p-0\.5:hover {
+    padding: 0.125rem;
+  }
+
+  .md\:hover\:p-1\.5:hover {
+    padding: 0.375rem;
+  }
+
+  .md\:hover\:p-2\.5:hover {
+    padding: 0.625rem;
+  }
+
+  .md\:hover\:p-3\.5:hover {
+    padding: 0.875rem;
+  }
+
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -84250,6 +87890,356 @@ video {
   }
 
   .md\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .md\:hover\:px-0:hover {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .md\:hover\:px-1:hover {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .md\:hover\:px-2:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .md\:hover\:px-3:hover {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .md\:hover\:px-4:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:hover\:px-5:hover {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .md\:hover\:px-6:hover {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:hover\:px-7:hover {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .md\:hover\:px-8:hover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .md\:hover\:px-9:hover {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .md\:hover\:px-10:hover {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:hover\:px-11:hover {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
+  .md\:hover\:px-12:hover {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .md\:hover\:px-14:hover {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .md\:hover\:px-16:hover {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:hover\:px-20:hover {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .md\:hover\:px-24:hover {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md\:hover\:px-28:hover {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .md\:hover\:px-32:hover {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .md\:hover\:px-36:hover {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .md\:hover\:px-40:hover {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .md\:hover\:px-44:hover {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+
+  .md\:hover\:px-48:hover {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .md\:hover\:px-52:hover {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
+  .md\:hover\:px-56:hover {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+
+  .md\:hover\:px-60:hover {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .md\:hover\:px-64:hover {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  .md\:hover\:px-72:hover {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+
+  .md\:hover\:px-80:hover {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .md\:hover\:px-96:hover {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .md\:hover\:px-px:hover {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .md\:hover\:px-0\.5:hover {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .md\:hover\:px-1\.5:hover {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+  }
+
+  .md\:hover\:px-2\.5:hover {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .md\:hover\:px-3\.5:hover {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
+  .md\:hover\:py-0:hover {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .md\:hover\:py-1:hover {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .md\:hover\:py-2:hover {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .md\:hover\:py-3:hover {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:hover\:py-4:hover {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .md\:hover\:py-5:hover {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:hover\:py-6:hover {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:hover\:py-7:hover {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .md\:hover\:py-8:hover {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:hover\:py-9:hover {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .md\:hover\:py-10:hover {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:hover\:py-11:hover {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .md\:hover\:py-12:hover {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .md\:hover\:py-14:hover {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:hover\:py-16:hover {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .md\:hover\:py-20:hover {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:hover\:py-24:hover {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .md\:hover\:py-28:hover {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .md\:hover\:py-32:hover {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .md\:hover\:py-36:hover {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .md\:hover\:py-40:hover {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .md\:hover\:py-44:hover {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+
+  .md\:hover\:py-48:hover {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .md\:hover\:py-52:hover {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .md\:hover\:py-56:hover {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+  }
+
+  .md\:hover\:py-60:hover {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  .md\:hover\:py-64:hover {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .md\:hover\:py-72:hover {
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+  }
+
+  .md\:hover\:py-80:hover {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  .md\:hover\:py-96:hover {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+  }
+
+  .md\:hover\:py-px:hover {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .md\:hover\:py-0\.5:hover {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .md\:hover\:py-1\.5:hover {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+
+  .md\:hover\:py-2\.5:hover {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .md\:hover\:py-3\.5:hover {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
   }
@@ -84811,6 +88801,566 @@ video {
   }
 
   .md\:pl-3\.5 {
+    padding-left: 0.875rem;
+  }
+
+  .md\:hover\:pt-0:hover {
+    padding-top: 0px;
+  }
+
+  .md\:hover\:pt-1:hover {
+    padding-top: 0.25rem;
+  }
+
+  .md\:hover\:pt-2:hover {
+    padding-top: 0.5rem;
+  }
+
+  .md\:hover\:pt-3:hover {
+    padding-top: 0.75rem;
+  }
+
+  .md\:hover\:pt-4:hover {
+    padding-top: 1rem;
+  }
+
+  .md\:hover\:pt-5:hover {
+    padding-top: 1.25rem;
+  }
+
+  .md\:hover\:pt-6:hover {
+    padding-top: 1.5rem;
+  }
+
+  .md\:hover\:pt-7:hover {
+    padding-top: 1.75rem;
+  }
+
+  .md\:hover\:pt-8:hover {
+    padding-top: 2rem;
+  }
+
+  .md\:hover\:pt-9:hover {
+    padding-top: 2.25rem;
+  }
+
+  .md\:hover\:pt-10:hover {
+    padding-top: 2.5rem;
+  }
+
+  .md\:hover\:pt-11:hover {
+    padding-top: 2.75rem;
+  }
+
+  .md\:hover\:pt-12:hover {
+    padding-top: 3rem;
+  }
+
+  .md\:hover\:pt-14:hover {
+    padding-top: 3.5rem;
+  }
+
+  .md\:hover\:pt-16:hover {
+    padding-top: 4rem;
+  }
+
+  .md\:hover\:pt-20:hover {
+    padding-top: 5rem;
+  }
+
+  .md\:hover\:pt-24:hover {
+    padding-top: 6rem;
+  }
+
+  .md\:hover\:pt-28:hover {
+    padding-top: 7rem;
+  }
+
+  .md\:hover\:pt-32:hover {
+    padding-top: 8rem;
+  }
+
+  .md\:hover\:pt-36:hover {
+    padding-top: 9rem;
+  }
+
+  .md\:hover\:pt-40:hover {
+    padding-top: 10rem;
+  }
+
+  .md\:hover\:pt-44:hover {
+    padding-top: 11rem;
+  }
+
+  .md\:hover\:pt-48:hover {
+    padding-top: 12rem;
+  }
+
+  .md\:hover\:pt-52:hover {
+    padding-top: 13rem;
+  }
+
+  .md\:hover\:pt-56:hover {
+    padding-top: 14rem;
+  }
+
+  .md\:hover\:pt-60:hover {
+    padding-top: 15rem;
+  }
+
+  .md\:hover\:pt-64:hover {
+    padding-top: 16rem;
+  }
+
+  .md\:hover\:pt-72:hover {
+    padding-top: 18rem;
+  }
+
+  .md\:hover\:pt-80:hover {
+    padding-top: 20rem;
+  }
+
+  .md\:hover\:pt-96:hover {
+    padding-top: 24rem;
+  }
+
+  .md\:hover\:pt-px:hover {
+    padding-top: 1px;
+  }
+
+  .md\:hover\:pt-0\.5:hover {
+    padding-top: 0.125rem;
+  }
+
+  .md\:hover\:pt-1\.5:hover {
+    padding-top: 0.375rem;
+  }
+
+  .md\:hover\:pt-2\.5:hover {
+    padding-top: 0.625rem;
+  }
+
+  .md\:hover\:pt-3\.5:hover {
+    padding-top: 0.875rem;
+  }
+
+  .md\:hover\:pr-0:hover {
+    padding-right: 0px;
+  }
+
+  .md\:hover\:pr-1:hover {
+    padding-right: 0.25rem;
+  }
+
+  .md\:hover\:pr-2:hover {
+    padding-right: 0.5rem;
+  }
+
+  .md\:hover\:pr-3:hover {
+    padding-right: 0.75rem;
+  }
+
+  .md\:hover\:pr-4:hover {
+    padding-right: 1rem;
+  }
+
+  .md\:hover\:pr-5:hover {
+    padding-right: 1.25rem;
+  }
+
+  .md\:hover\:pr-6:hover {
+    padding-right: 1.5rem;
+  }
+
+  .md\:hover\:pr-7:hover {
+    padding-right: 1.75rem;
+  }
+
+  .md\:hover\:pr-8:hover {
+    padding-right: 2rem;
+  }
+
+  .md\:hover\:pr-9:hover {
+    padding-right: 2.25rem;
+  }
+
+  .md\:hover\:pr-10:hover {
+    padding-right: 2.5rem;
+  }
+
+  .md\:hover\:pr-11:hover {
+    padding-right: 2.75rem;
+  }
+
+  .md\:hover\:pr-12:hover {
+    padding-right: 3rem;
+  }
+
+  .md\:hover\:pr-14:hover {
+    padding-right: 3.5rem;
+  }
+
+  .md\:hover\:pr-16:hover {
+    padding-right: 4rem;
+  }
+
+  .md\:hover\:pr-20:hover {
+    padding-right: 5rem;
+  }
+
+  .md\:hover\:pr-24:hover {
+    padding-right: 6rem;
+  }
+
+  .md\:hover\:pr-28:hover {
+    padding-right: 7rem;
+  }
+
+  .md\:hover\:pr-32:hover {
+    padding-right: 8rem;
+  }
+
+  .md\:hover\:pr-36:hover {
+    padding-right: 9rem;
+  }
+
+  .md\:hover\:pr-40:hover {
+    padding-right: 10rem;
+  }
+
+  .md\:hover\:pr-44:hover {
+    padding-right: 11rem;
+  }
+
+  .md\:hover\:pr-48:hover {
+    padding-right: 12rem;
+  }
+
+  .md\:hover\:pr-52:hover {
+    padding-right: 13rem;
+  }
+
+  .md\:hover\:pr-56:hover {
+    padding-right: 14rem;
+  }
+
+  .md\:hover\:pr-60:hover {
+    padding-right: 15rem;
+  }
+
+  .md\:hover\:pr-64:hover {
+    padding-right: 16rem;
+  }
+
+  .md\:hover\:pr-72:hover {
+    padding-right: 18rem;
+  }
+
+  .md\:hover\:pr-80:hover {
+    padding-right: 20rem;
+  }
+
+  .md\:hover\:pr-96:hover {
+    padding-right: 24rem;
+  }
+
+  .md\:hover\:pr-px:hover {
+    padding-right: 1px;
+  }
+
+  .md\:hover\:pr-0\.5:hover {
+    padding-right: 0.125rem;
+  }
+
+  .md\:hover\:pr-1\.5:hover {
+    padding-right: 0.375rem;
+  }
+
+  .md\:hover\:pr-2\.5:hover {
+    padding-right: 0.625rem;
+  }
+
+  .md\:hover\:pr-3\.5:hover {
+    padding-right: 0.875rem;
+  }
+
+  .md\:hover\:pb-0:hover {
+    padding-bottom: 0px;
+  }
+
+  .md\:hover\:pb-1:hover {
+    padding-bottom: 0.25rem;
+  }
+
+  .md\:hover\:pb-2:hover {
+    padding-bottom: 0.5rem;
+  }
+
+  .md\:hover\:pb-3:hover {
+    padding-bottom: 0.75rem;
+  }
+
+  .md\:hover\:pb-4:hover {
+    padding-bottom: 1rem;
+  }
+
+  .md\:hover\:pb-5:hover {
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:hover\:pb-6:hover {
+    padding-bottom: 1.5rem;
+  }
+
+  .md\:hover\:pb-7:hover {
+    padding-bottom: 1.75rem;
+  }
+
+  .md\:hover\:pb-8:hover {
+    padding-bottom: 2rem;
+  }
+
+  .md\:hover\:pb-9:hover {
+    padding-bottom: 2.25rem;
+  }
+
+  .md\:hover\:pb-10:hover {
+    padding-bottom: 2.5rem;
+  }
+
+  .md\:hover\:pb-11:hover {
+    padding-bottom: 2.75rem;
+  }
+
+  .md\:hover\:pb-12:hover {
+    padding-bottom: 3rem;
+  }
+
+  .md\:hover\:pb-14:hover {
+    padding-bottom: 3.5rem;
+  }
+
+  .md\:hover\:pb-16:hover {
+    padding-bottom: 4rem;
+  }
+
+  .md\:hover\:pb-20:hover {
+    padding-bottom: 5rem;
+  }
+
+  .md\:hover\:pb-24:hover {
+    padding-bottom: 6rem;
+  }
+
+  .md\:hover\:pb-28:hover {
+    padding-bottom: 7rem;
+  }
+
+  .md\:hover\:pb-32:hover {
+    padding-bottom: 8rem;
+  }
+
+  .md\:hover\:pb-36:hover {
+    padding-bottom: 9rem;
+  }
+
+  .md\:hover\:pb-40:hover {
+    padding-bottom: 10rem;
+  }
+
+  .md\:hover\:pb-44:hover {
+    padding-bottom: 11rem;
+  }
+
+  .md\:hover\:pb-48:hover {
+    padding-bottom: 12rem;
+  }
+
+  .md\:hover\:pb-52:hover {
+    padding-bottom: 13rem;
+  }
+
+  .md\:hover\:pb-56:hover {
+    padding-bottom: 14rem;
+  }
+
+  .md\:hover\:pb-60:hover {
+    padding-bottom: 15rem;
+  }
+
+  .md\:hover\:pb-64:hover {
+    padding-bottom: 16rem;
+  }
+
+  .md\:hover\:pb-72:hover {
+    padding-bottom: 18rem;
+  }
+
+  .md\:hover\:pb-80:hover {
+    padding-bottom: 20rem;
+  }
+
+  .md\:hover\:pb-96:hover {
+    padding-bottom: 24rem;
+  }
+
+  .md\:hover\:pb-px:hover {
+    padding-bottom: 1px;
+  }
+
+  .md\:hover\:pb-0\.5:hover {
+    padding-bottom: 0.125rem;
+  }
+
+  .md\:hover\:pb-1\.5:hover {
+    padding-bottom: 0.375rem;
+  }
+
+  .md\:hover\:pb-2\.5:hover {
+    padding-bottom: 0.625rem;
+  }
+
+  .md\:hover\:pb-3\.5:hover {
+    padding-bottom: 0.875rem;
+  }
+
+  .md\:hover\:pl-0:hover {
+    padding-left: 0px;
+  }
+
+  .md\:hover\:pl-1:hover {
+    padding-left: 0.25rem;
+  }
+
+  .md\:hover\:pl-2:hover {
+    padding-left: 0.5rem;
+  }
+
+  .md\:hover\:pl-3:hover {
+    padding-left: 0.75rem;
+  }
+
+  .md\:hover\:pl-4:hover {
+    padding-left: 1rem;
+  }
+
+  .md\:hover\:pl-5:hover {
+    padding-left: 1.25rem;
+  }
+
+  .md\:hover\:pl-6:hover {
+    padding-left: 1.5rem;
+  }
+
+  .md\:hover\:pl-7:hover {
+    padding-left: 1.75rem;
+  }
+
+  .md\:hover\:pl-8:hover {
+    padding-left: 2rem;
+  }
+
+  .md\:hover\:pl-9:hover {
+    padding-left: 2.25rem;
+  }
+
+  .md\:hover\:pl-10:hover {
+    padding-left: 2.5rem;
+  }
+
+  .md\:hover\:pl-11:hover {
+    padding-left: 2.75rem;
+  }
+
+  .md\:hover\:pl-12:hover {
+    padding-left: 3rem;
+  }
+
+  .md\:hover\:pl-14:hover {
+    padding-left: 3.5rem;
+  }
+
+  .md\:hover\:pl-16:hover {
+    padding-left: 4rem;
+  }
+
+  .md\:hover\:pl-20:hover {
+    padding-left: 5rem;
+  }
+
+  .md\:hover\:pl-24:hover {
+    padding-left: 6rem;
+  }
+
+  .md\:hover\:pl-28:hover {
+    padding-left: 7rem;
+  }
+
+  .md\:hover\:pl-32:hover {
+    padding-left: 8rem;
+  }
+
+  .md\:hover\:pl-36:hover {
+    padding-left: 9rem;
+  }
+
+  .md\:hover\:pl-40:hover {
+    padding-left: 10rem;
+  }
+
+  .md\:hover\:pl-44:hover {
+    padding-left: 11rem;
+  }
+
+  .md\:hover\:pl-48:hover {
+    padding-left: 12rem;
+  }
+
+  .md\:hover\:pl-52:hover {
+    padding-left: 13rem;
+  }
+
+  .md\:hover\:pl-56:hover {
+    padding-left: 14rem;
+  }
+
+  .md\:hover\:pl-60:hover {
+    padding-left: 15rem;
+  }
+
+  .md\:hover\:pl-64:hover {
+    padding-left: 16rem;
+  }
+
+  .md\:hover\:pl-72:hover {
+    padding-left: 18rem;
+  }
+
+  .md\:hover\:pl-80:hover {
+    padding-left: 20rem;
+  }
+
+  .md\:hover\:pl-96:hover {
+    padding-left: 24rem;
+  }
+
+  .md\:hover\:pl-px:hover {
+    padding-left: 1px;
+  }
+
+  .md\:hover\:pl-0\.5:hover {
+    padding-left: 0.125rem;
+  }
+
+  .md\:hover\:pl-1\.5:hover {
+    padding-left: 0.375rem;
+  }
+
+  .md\:hover\:pl-2\.5:hover {
+    padding-left: 0.625rem;
+  }
+
+  .md\:hover\:pl-3\.5:hover {
     padding-left: 0.875rem;
   }
 
@@ -91072,6 +95622,46 @@ video {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
+  .md\:active\:shadow-sm:active {
+    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:active\:shadow:active {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:active\:shadow-md:active {
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:active\:shadow-lg:active {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:active\:shadow-xl:active {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:active\:shadow-2xl:active {
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:active\:shadow-inner:active {
+    --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .md\:active\:shadow-none:active {
+    --tw-shadow: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
   .md\:outline-none {
     outline: 2px solid transparent;
     outline-offset: 2px;
@@ -94515,6 +99105,26 @@ video {
   }
 
   .lg\:sticky {
+    position: sticky;
+  }
+
+  .lg\:hover\:static:hover {
+    position: static;
+  }
+
+  .lg\:hover\:fixed:hover {
+    position: fixed;
+  }
+
+  .lg\:hover\:absolute:hover {
+    position: absolute;
+  }
+
+  .lg\:hover\:relative:hover {
+    position: relative;
+  }
+
+  .lg\:hover\:sticky:hover {
     position: sticky;
   }
 
@@ -111166,6 +115776,424 @@ video {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .lg\:active\:bg-transparent:active {
+    background-color: transparent;
+  }
+
+  .lg\:active\:bg-current:active {
+    background-color: currentColor;
+  }
+
+  .lg\:active\:bg-black:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-white:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-gray-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-red-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(127, 29, 29, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(180, 83, 9, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(146, 64, 14, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-yellow-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(120, 53, 15, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(4, 120, 87, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 95, 70, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-green-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 64, 175, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-blue-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(238, 242, 255, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 231, 255, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(165, 180, 252, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(129, 140, 248, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 48, 163, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-indigo-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 243, 255, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 233, 254, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(221, 214, 254, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(196, 181, 253, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 139, 250, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(109, 40, 217, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(91, 33, 182, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-purple-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(76, 29, 149, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 242, 248, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 231, 243, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 207, 232, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(244, 114, 182, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 39, 119, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(190, 24, 93, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(157, 23, 77, var(--tw-bg-opacity));
+  }
+
+  .lg\:active\:bg-pink-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
   .lg\:bg-opacity-0 {
     --tw-bg-opacity: 0;
   }
@@ -115131,6 +120159,146 @@ video {
     padding: 0.875rem;
   }
 
+  .lg\:hover\:p-0:hover {
+    padding: 0px;
+  }
+
+  .lg\:hover\:p-1:hover {
+    padding: 0.25rem;
+  }
+
+  .lg\:hover\:p-2:hover {
+    padding: 0.5rem;
+  }
+
+  .lg\:hover\:p-3:hover {
+    padding: 0.75rem;
+  }
+
+  .lg\:hover\:p-4:hover {
+    padding: 1rem;
+  }
+
+  .lg\:hover\:p-5:hover {
+    padding: 1.25rem;
+  }
+
+  .lg\:hover\:p-6:hover {
+    padding: 1.5rem;
+  }
+
+  .lg\:hover\:p-7:hover {
+    padding: 1.75rem;
+  }
+
+  .lg\:hover\:p-8:hover {
+    padding: 2rem;
+  }
+
+  .lg\:hover\:p-9:hover {
+    padding: 2.25rem;
+  }
+
+  .lg\:hover\:p-10:hover {
+    padding: 2.5rem;
+  }
+
+  .lg\:hover\:p-11:hover {
+    padding: 2.75rem;
+  }
+
+  .lg\:hover\:p-12:hover {
+    padding: 3rem;
+  }
+
+  .lg\:hover\:p-14:hover {
+    padding: 3.5rem;
+  }
+
+  .lg\:hover\:p-16:hover {
+    padding: 4rem;
+  }
+
+  .lg\:hover\:p-20:hover {
+    padding: 5rem;
+  }
+
+  .lg\:hover\:p-24:hover {
+    padding: 6rem;
+  }
+
+  .lg\:hover\:p-28:hover {
+    padding: 7rem;
+  }
+
+  .lg\:hover\:p-32:hover {
+    padding: 8rem;
+  }
+
+  .lg\:hover\:p-36:hover {
+    padding: 9rem;
+  }
+
+  .lg\:hover\:p-40:hover {
+    padding: 10rem;
+  }
+
+  .lg\:hover\:p-44:hover {
+    padding: 11rem;
+  }
+
+  .lg\:hover\:p-48:hover {
+    padding: 12rem;
+  }
+
+  .lg\:hover\:p-52:hover {
+    padding: 13rem;
+  }
+
+  .lg\:hover\:p-56:hover {
+    padding: 14rem;
+  }
+
+  .lg\:hover\:p-60:hover {
+    padding: 15rem;
+  }
+
+  .lg\:hover\:p-64:hover {
+    padding: 16rem;
+  }
+
+  .lg\:hover\:p-72:hover {
+    padding: 18rem;
+  }
+
+  .lg\:hover\:p-80:hover {
+    padding: 20rem;
+  }
+
+  .lg\:hover\:p-96:hover {
+    padding: 24rem;
+  }
+
+  .lg\:hover\:p-px:hover {
+    padding: 1px;
+  }
+
+  .lg\:hover\:p-0\.5:hover {
+    padding: 0.125rem;
+  }
+
+  .lg\:hover\:p-1\.5:hover {
+    padding: 0.375rem;
+  }
+
+  .lg\:hover\:p-2\.5:hover {
+    padding: 0.625rem;
+  }
+
+  .lg\:hover\:p-3\.5:hover {
+    padding: 0.875rem;
+  }
+
   .lg\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -115477,6 +120645,356 @@ video {
   }
 
   .lg\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .lg\:hover\:px-0:hover {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:hover\:px-1:hover {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .lg\:hover\:px-2:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg\:hover\:px-3:hover {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .lg\:hover\:px-4:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:hover\:px-5:hover {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .lg\:hover\:px-6:hover {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lg\:hover\:px-7:hover {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .lg\:hover\:px-8:hover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .lg\:hover\:px-9:hover {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .lg\:hover\:px-10:hover {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:hover\:px-11:hover {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
+  .lg\:hover\:px-12:hover {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .lg\:hover\:px-14:hover {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .lg\:hover\:px-16:hover {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:hover\:px-20:hover {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .lg\:hover\:px-24:hover {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .lg\:hover\:px-28:hover {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .lg\:hover\:px-32:hover {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .lg\:hover\:px-36:hover {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .lg\:hover\:px-40:hover {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .lg\:hover\:px-44:hover {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+
+  .lg\:hover\:px-48:hover {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .lg\:hover\:px-52:hover {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
+  .lg\:hover\:px-56:hover {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+
+  .lg\:hover\:px-60:hover {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .lg\:hover\:px-64:hover {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  .lg\:hover\:px-72:hover {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+
+  .lg\:hover\:px-80:hover {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .lg\:hover\:px-96:hover {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .lg\:hover\:px-px:hover {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .lg\:hover\:px-0\.5:hover {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .lg\:hover\:px-1\.5:hover {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+  }
+
+  .lg\:hover\:px-2\.5:hover {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .lg\:hover\:px-3\.5:hover {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
+  .lg\:hover\:py-0:hover {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .lg\:hover\:py-1:hover {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .lg\:hover\:py-2:hover {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .lg\:hover\:py-3:hover {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:hover\:py-4:hover {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .lg\:hover\:py-5:hover {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:hover\:py-6:hover {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:hover\:py-7:hover {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .lg\:hover\:py-8:hover {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .lg\:hover\:py-9:hover {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .lg\:hover\:py-10:hover {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:hover\:py-11:hover {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .lg\:hover\:py-12:hover {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .lg\:hover\:py-14:hover {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:hover\:py-16:hover {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .lg\:hover\:py-20:hover {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:hover\:py-24:hover {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .lg\:hover\:py-28:hover {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .lg\:hover\:py-32:hover {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .lg\:hover\:py-36:hover {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .lg\:hover\:py-40:hover {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .lg\:hover\:py-44:hover {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+
+  .lg\:hover\:py-48:hover {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .lg\:hover\:py-52:hover {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .lg\:hover\:py-56:hover {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+  }
+
+  .lg\:hover\:py-60:hover {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  .lg\:hover\:py-64:hover {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .lg\:hover\:py-72:hover {
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+  }
+
+  .lg\:hover\:py-80:hover {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  .lg\:hover\:py-96:hover {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+  }
+
+  .lg\:hover\:py-px:hover {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .lg\:hover\:py-0\.5:hover {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .lg\:hover\:py-1\.5:hover {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+
+  .lg\:hover\:py-2\.5:hover {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .lg\:hover\:py-3\.5:hover {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
   }
@@ -116038,6 +121556,566 @@ video {
   }
 
   .lg\:pl-3\.5 {
+    padding-left: 0.875rem;
+  }
+
+  .lg\:hover\:pt-0:hover {
+    padding-top: 0px;
+  }
+
+  .lg\:hover\:pt-1:hover {
+    padding-top: 0.25rem;
+  }
+
+  .lg\:hover\:pt-2:hover {
+    padding-top: 0.5rem;
+  }
+
+  .lg\:hover\:pt-3:hover {
+    padding-top: 0.75rem;
+  }
+
+  .lg\:hover\:pt-4:hover {
+    padding-top: 1rem;
+  }
+
+  .lg\:hover\:pt-5:hover {
+    padding-top: 1.25rem;
+  }
+
+  .lg\:hover\:pt-6:hover {
+    padding-top: 1.5rem;
+  }
+
+  .lg\:hover\:pt-7:hover {
+    padding-top: 1.75rem;
+  }
+
+  .lg\:hover\:pt-8:hover {
+    padding-top: 2rem;
+  }
+
+  .lg\:hover\:pt-9:hover {
+    padding-top: 2.25rem;
+  }
+
+  .lg\:hover\:pt-10:hover {
+    padding-top: 2.5rem;
+  }
+
+  .lg\:hover\:pt-11:hover {
+    padding-top: 2.75rem;
+  }
+
+  .lg\:hover\:pt-12:hover {
+    padding-top: 3rem;
+  }
+
+  .lg\:hover\:pt-14:hover {
+    padding-top: 3.5rem;
+  }
+
+  .lg\:hover\:pt-16:hover {
+    padding-top: 4rem;
+  }
+
+  .lg\:hover\:pt-20:hover {
+    padding-top: 5rem;
+  }
+
+  .lg\:hover\:pt-24:hover {
+    padding-top: 6rem;
+  }
+
+  .lg\:hover\:pt-28:hover {
+    padding-top: 7rem;
+  }
+
+  .lg\:hover\:pt-32:hover {
+    padding-top: 8rem;
+  }
+
+  .lg\:hover\:pt-36:hover {
+    padding-top: 9rem;
+  }
+
+  .lg\:hover\:pt-40:hover {
+    padding-top: 10rem;
+  }
+
+  .lg\:hover\:pt-44:hover {
+    padding-top: 11rem;
+  }
+
+  .lg\:hover\:pt-48:hover {
+    padding-top: 12rem;
+  }
+
+  .lg\:hover\:pt-52:hover {
+    padding-top: 13rem;
+  }
+
+  .lg\:hover\:pt-56:hover {
+    padding-top: 14rem;
+  }
+
+  .lg\:hover\:pt-60:hover {
+    padding-top: 15rem;
+  }
+
+  .lg\:hover\:pt-64:hover {
+    padding-top: 16rem;
+  }
+
+  .lg\:hover\:pt-72:hover {
+    padding-top: 18rem;
+  }
+
+  .lg\:hover\:pt-80:hover {
+    padding-top: 20rem;
+  }
+
+  .lg\:hover\:pt-96:hover {
+    padding-top: 24rem;
+  }
+
+  .lg\:hover\:pt-px:hover {
+    padding-top: 1px;
+  }
+
+  .lg\:hover\:pt-0\.5:hover {
+    padding-top: 0.125rem;
+  }
+
+  .lg\:hover\:pt-1\.5:hover {
+    padding-top: 0.375rem;
+  }
+
+  .lg\:hover\:pt-2\.5:hover {
+    padding-top: 0.625rem;
+  }
+
+  .lg\:hover\:pt-3\.5:hover {
+    padding-top: 0.875rem;
+  }
+
+  .lg\:hover\:pr-0:hover {
+    padding-right: 0px;
+  }
+
+  .lg\:hover\:pr-1:hover {
+    padding-right: 0.25rem;
+  }
+
+  .lg\:hover\:pr-2:hover {
+    padding-right: 0.5rem;
+  }
+
+  .lg\:hover\:pr-3:hover {
+    padding-right: 0.75rem;
+  }
+
+  .lg\:hover\:pr-4:hover {
+    padding-right: 1rem;
+  }
+
+  .lg\:hover\:pr-5:hover {
+    padding-right: 1.25rem;
+  }
+
+  .lg\:hover\:pr-6:hover {
+    padding-right: 1.5rem;
+  }
+
+  .lg\:hover\:pr-7:hover {
+    padding-right: 1.75rem;
+  }
+
+  .lg\:hover\:pr-8:hover {
+    padding-right: 2rem;
+  }
+
+  .lg\:hover\:pr-9:hover {
+    padding-right: 2.25rem;
+  }
+
+  .lg\:hover\:pr-10:hover {
+    padding-right: 2.5rem;
+  }
+
+  .lg\:hover\:pr-11:hover {
+    padding-right: 2.75rem;
+  }
+
+  .lg\:hover\:pr-12:hover {
+    padding-right: 3rem;
+  }
+
+  .lg\:hover\:pr-14:hover {
+    padding-right: 3.5rem;
+  }
+
+  .lg\:hover\:pr-16:hover {
+    padding-right: 4rem;
+  }
+
+  .lg\:hover\:pr-20:hover {
+    padding-right: 5rem;
+  }
+
+  .lg\:hover\:pr-24:hover {
+    padding-right: 6rem;
+  }
+
+  .lg\:hover\:pr-28:hover {
+    padding-right: 7rem;
+  }
+
+  .lg\:hover\:pr-32:hover {
+    padding-right: 8rem;
+  }
+
+  .lg\:hover\:pr-36:hover {
+    padding-right: 9rem;
+  }
+
+  .lg\:hover\:pr-40:hover {
+    padding-right: 10rem;
+  }
+
+  .lg\:hover\:pr-44:hover {
+    padding-right: 11rem;
+  }
+
+  .lg\:hover\:pr-48:hover {
+    padding-right: 12rem;
+  }
+
+  .lg\:hover\:pr-52:hover {
+    padding-right: 13rem;
+  }
+
+  .lg\:hover\:pr-56:hover {
+    padding-right: 14rem;
+  }
+
+  .lg\:hover\:pr-60:hover {
+    padding-right: 15rem;
+  }
+
+  .lg\:hover\:pr-64:hover {
+    padding-right: 16rem;
+  }
+
+  .lg\:hover\:pr-72:hover {
+    padding-right: 18rem;
+  }
+
+  .lg\:hover\:pr-80:hover {
+    padding-right: 20rem;
+  }
+
+  .lg\:hover\:pr-96:hover {
+    padding-right: 24rem;
+  }
+
+  .lg\:hover\:pr-px:hover {
+    padding-right: 1px;
+  }
+
+  .lg\:hover\:pr-0\.5:hover {
+    padding-right: 0.125rem;
+  }
+
+  .lg\:hover\:pr-1\.5:hover {
+    padding-right: 0.375rem;
+  }
+
+  .lg\:hover\:pr-2\.5:hover {
+    padding-right: 0.625rem;
+  }
+
+  .lg\:hover\:pr-3\.5:hover {
+    padding-right: 0.875rem;
+  }
+
+  .lg\:hover\:pb-0:hover {
+    padding-bottom: 0px;
+  }
+
+  .lg\:hover\:pb-1:hover {
+    padding-bottom: 0.25rem;
+  }
+
+  .lg\:hover\:pb-2:hover {
+    padding-bottom: 0.5rem;
+  }
+
+  .lg\:hover\:pb-3:hover {
+    padding-bottom: 0.75rem;
+  }
+
+  .lg\:hover\:pb-4:hover {
+    padding-bottom: 1rem;
+  }
+
+  .lg\:hover\:pb-5:hover {
+    padding-bottom: 1.25rem;
+  }
+
+  .lg\:hover\:pb-6:hover {
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:hover\:pb-7:hover {
+    padding-bottom: 1.75rem;
+  }
+
+  .lg\:hover\:pb-8:hover {
+    padding-bottom: 2rem;
+  }
+
+  .lg\:hover\:pb-9:hover {
+    padding-bottom: 2.25rem;
+  }
+
+  .lg\:hover\:pb-10:hover {
+    padding-bottom: 2.5rem;
+  }
+
+  .lg\:hover\:pb-11:hover {
+    padding-bottom: 2.75rem;
+  }
+
+  .lg\:hover\:pb-12:hover {
+    padding-bottom: 3rem;
+  }
+
+  .lg\:hover\:pb-14:hover {
+    padding-bottom: 3.5rem;
+  }
+
+  .lg\:hover\:pb-16:hover {
+    padding-bottom: 4rem;
+  }
+
+  .lg\:hover\:pb-20:hover {
+    padding-bottom: 5rem;
+  }
+
+  .lg\:hover\:pb-24:hover {
+    padding-bottom: 6rem;
+  }
+
+  .lg\:hover\:pb-28:hover {
+    padding-bottom: 7rem;
+  }
+
+  .lg\:hover\:pb-32:hover {
+    padding-bottom: 8rem;
+  }
+
+  .lg\:hover\:pb-36:hover {
+    padding-bottom: 9rem;
+  }
+
+  .lg\:hover\:pb-40:hover {
+    padding-bottom: 10rem;
+  }
+
+  .lg\:hover\:pb-44:hover {
+    padding-bottom: 11rem;
+  }
+
+  .lg\:hover\:pb-48:hover {
+    padding-bottom: 12rem;
+  }
+
+  .lg\:hover\:pb-52:hover {
+    padding-bottom: 13rem;
+  }
+
+  .lg\:hover\:pb-56:hover {
+    padding-bottom: 14rem;
+  }
+
+  .lg\:hover\:pb-60:hover {
+    padding-bottom: 15rem;
+  }
+
+  .lg\:hover\:pb-64:hover {
+    padding-bottom: 16rem;
+  }
+
+  .lg\:hover\:pb-72:hover {
+    padding-bottom: 18rem;
+  }
+
+  .lg\:hover\:pb-80:hover {
+    padding-bottom: 20rem;
+  }
+
+  .lg\:hover\:pb-96:hover {
+    padding-bottom: 24rem;
+  }
+
+  .lg\:hover\:pb-px:hover {
+    padding-bottom: 1px;
+  }
+
+  .lg\:hover\:pb-0\.5:hover {
+    padding-bottom: 0.125rem;
+  }
+
+  .lg\:hover\:pb-1\.5:hover {
+    padding-bottom: 0.375rem;
+  }
+
+  .lg\:hover\:pb-2\.5:hover {
+    padding-bottom: 0.625rem;
+  }
+
+  .lg\:hover\:pb-3\.5:hover {
+    padding-bottom: 0.875rem;
+  }
+
+  .lg\:hover\:pl-0:hover {
+    padding-left: 0px;
+  }
+
+  .lg\:hover\:pl-1:hover {
+    padding-left: 0.25rem;
+  }
+
+  .lg\:hover\:pl-2:hover {
+    padding-left: 0.5rem;
+  }
+
+  .lg\:hover\:pl-3:hover {
+    padding-left: 0.75rem;
+  }
+
+  .lg\:hover\:pl-4:hover {
+    padding-left: 1rem;
+  }
+
+  .lg\:hover\:pl-5:hover {
+    padding-left: 1.25rem;
+  }
+
+  .lg\:hover\:pl-6:hover {
+    padding-left: 1.5rem;
+  }
+
+  .lg\:hover\:pl-7:hover {
+    padding-left: 1.75rem;
+  }
+
+  .lg\:hover\:pl-8:hover {
+    padding-left: 2rem;
+  }
+
+  .lg\:hover\:pl-9:hover {
+    padding-left: 2.25rem;
+  }
+
+  .lg\:hover\:pl-10:hover {
+    padding-left: 2.5rem;
+  }
+
+  .lg\:hover\:pl-11:hover {
+    padding-left: 2.75rem;
+  }
+
+  .lg\:hover\:pl-12:hover {
+    padding-left: 3rem;
+  }
+
+  .lg\:hover\:pl-14:hover {
+    padding-left: 3.5rem;
+  }
+
+  .lg\:hover\:pl-16:hover {
+    padding-left: 4rem;
+  }
+
+  .lg\:hover\:pl-20:hover {
+    padding-left: 5rem;
+  }
+
+  .lg\:hover\:pl-24:hover {
+    padding-left: 6rem;
+  }
+
+  .lg\:hover\:pl-28:hover {
+    padding-left: 7rem;
+  }
+
+  .lg\:hover\:pl-32:hover {
+    padding-left: 8rem;
+  }
+
+  .lg\:hover\:pl-36:hover {
+    padding-left: 9rem;
+  }
+
+  .lg\:hover\:pl-40:hover {
+    padding-left: 10rem;
+  }
+
+  .lg\:hover\:pl-44:hover {
+    padding-left: 11rem;
+  }
+
+  .lg\:hover\:pl-48:hover {
+    padding-left: 12rem;
+  }
+
+  .lg\:hover\:pl-52:hover {
+    padding-left: 13rem;
+  }
+
+  .lg\:hover\:pl-56:hover {
+    padding-left: 14rem;
+  }
+
+  .lg\:hover\:pl-60:hover {
+    padding-left: 15rem;
+  }
+
+  .lg\:hover\:pl-64:hover {
+    padding-left: 16rem;
+  }
+
+  .lg\:hover\:pl-72:hover {
+    padding-left: 18rem;
+  }
+
+  .lg\:hover\:pl-80:hover {
+    padding-left: 20rem;
+  }
+
+  .lg\:hover\:pl-96:hover {
+    padding-left: 24rem;
+  }
+
+  .lg\:hover\:pl-px:hover {
+    padding-left: 1px;
+  }
+
+  .lg\:hover\:pl-0\.5:hover {
+    padding-left: 0.125rem;
+  }
+
+  .lg\:hover\:pl-1\.5:hover {
+    padding-left: 0.375rem;
+  }
+
+  .lg\:hover\:pl-2\.5:hover {
+    padding-left: 0.625rem;
+  }
+
+  .lg\:hover\:pl-3\.5:hover {
     padding-left: 0.875rem;
   }
 
@@ -122299,6 +128377,46 @@ video {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
+  .lg\:active\:shadow-sm:active {
+    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:active\:shadow:active {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:active\:shadow-md:active {
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:active\:shadow-lg:active {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:active\:shadow-xl:active {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:active\:shadow-2xl:active {
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:active\:shadow-inner:active {
+    --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .lg\:active\:shadow-none:active {
+    --tw-shadow: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
   .lg\:outline-none {
     outline: 2px solid transparent;
     outline-offset: 2px;
@@ -125742,6 +131860,26 @@ video {
   }
 
   .xl\:sticky {
+    position: sticky;
+  }
+
+  .xl\:hover\:static:hover {
+    position: static;
+  }
+
+  .xl\:hover\:fixed:hover {
+    position: fixed;
+  }
+
+  .xl\:hover\:absolute:hover {
+    position: absolute;
+  }
+
+  .xl\:hover\:relative:hover {
+    position: relative;
+  }
+
+  .xl\:hover\:sticky:hover {
     position: sticky;
   }
 
@@ -142393,6 +148531,424 @@ video {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .xl\:active\:bg-transparent:active {
+    background-color: transparent;
+  }
+
+  .xl\:active\:bg-current:active {
+    background-color: currentColor;
+  }
+
+  .xl\:active\:bg-black:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-white:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-gray-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-red-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(127, 29, 29, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(180, 83, 9, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(146, 64, 14, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-yellow-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(120, 53, 15, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(4, 120, 87, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 95, 70, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-green-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 64, 175, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-blue-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(238, 242, 255, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 231, 255, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(165, 180, 252, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(129, 140, 248, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 48, 163, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-indigo-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 243, 255, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 233, 254, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(221, 214, 254, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(196, 181, 253, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 139, 250, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(109, 40, 217, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(91, 33, 182, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-purple-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(76, 29, 149, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 242, 248, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 231, 243, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 207, 232, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(244, 114, 182, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 39, 119, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(190, 24, 93, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(157, 23, 77, var(--tw-bg-opacity));
+  }
+
+  .xl\:active\:bg-pink-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
   .xl\:bg-opacity-0 {
     --tw-bg-opacity: 0;
   }
@@ -146358,6 +152914,146 @@ video {
     padding: 0.875rem;
   }
 
+  .xl\:hover\:p-0:hover {
+    padding: 0px;
+  }
+
+  .xl\:hover\:p-1:hover {
+    padding: 0.25rem;
+  }
+
+  .xl\:hover\:p-2:hover {
+    padding: 0.5rem;
+  }
+
+  .xl\:hover\:p-3:hover {
+    padding: 0.75rem;
+  }
+
+  .xl\:hover\:p-4:hover {
+    padding: 1rem;
+  }
+
+  .xl\:hover\:p-5:hover {
+    padding: 1.25rem;
+  }
+
+  .xl\:hover\:p-6:hover {
+    padding: 1.5rem;
+  }
+
+  .xl\:hover\:p-7:hover {
+    padding: 1.75rem;
+  }
+
+  .xl\:hover\:p-8:hover {
+    padding: 2rem;
+  }
+
+  .xl\:hover\:p-9:hover {
+    padding: 2.25rem;
+  }
+
+  .xl\:hover\:p-10:hover {
+    padding: 2.5rem;
+  }
+
+  .xl\:hover\:p-11:hover {
+    padding: 2.75rem;
+  }
+
+  .xl\:hover\:p-12:hover {
+    padding: 3rem;
+  }
+
+  .xl\:hover\:p-14:hover {
+    padding: 3.5rem;
+  }
+
+  .xl\:hover\:p-16:hover {
+    padding: 4rem;
+  }
+
+  .xl\:hover\:p-20:hover {
+    padding: 5rem;
+  }
+
+  .xl\:hover\:p-24:hover {
+    padding: 6rem;
+  }
+
+  .xl\:hover\:p-28:hover {
+    padding: 7rem;
+  }
+
+  .xl\:hover\:p-32:hover {
+    padding: 8rem;
+  }
+
+  .xl\:hover\:p-36:hover {
+    padding: 9rem;
+  }
+
+  .xl\:hover\:p-40:hover {
+    padding: 10rem;
+  }
+
+  .xl\:hover\:p-44:hover {
+    padding: 11rem;
+  }
+
+  .xl\:hover\:p-48:hover {
+    padding: 12rem;
+  }
+
+  .xl\:hover\:p-52:hover {
+    padding: 13rem;
+  }
+
+  .xl\:hover\:p-56:hover {
+    padding: 14rem;
+  }
+
+  .xl\:hover\:p-60:hover {
+    padding: 15rem;
+  }
+
+  .xl\:hover\:p-64:hover {
+    padding: 16rem;
+  }
+
+  .xl\:hover\:p-72:hover {
+    padding: 18rem;
+  }
+
+  .xl\:hover\:p-80:hover {
+    padding: 20rem;
+  }
+
+  .xl\:hover\:p-96:hover {
+    padding: 24rem;
+  }
+
+  .xl\:hover\:p-px:hover {
+    padding: 1px;
+  }
+
+  .xl\:hover\:p-0\.5:hover {
+    padding: 0.125rem;
+  }
+
+  .xl\:hover\:p-1\.5:hover {
+    padding: 0.375rem;
+  }
+
+  .xl\:hover\:p-2\.5:hover {
+    padding: 0.625rem;
+  }
+
+  .xl\:hover\:p-3\.5:hover {
+    padding: 0.875rem;
+  }
+
   .xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -146704,6 +153400,356 @@ video {
   }
 
   .xl\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .xl\:hover\:px-0:hover {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .xl\:hover\:px-1:hover {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .xl\:hover\:px-2:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .xl\:hover\:px-3:hover {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .xl\:hover\:px-4:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xl\:hover\:px-5:hover {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .xl\:hover\:px-6:hover {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .xl\:hover\:px-7:hover {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .xl\:hover\:px-8:hover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .xl\:hover\:px-9:hover {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .xl\:hover\:px-10:hover {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .xl\:hover\:px-11:hover {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
+  .xl\:hover\:px-12:hover {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .xl\:hover\:px-14:hover {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .xl\:hover\:px-16:hover {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .xl\:hover\:px-20:hover {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .xl\:hover\:px-24:hover {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .xl\:hover\:px-28:hover {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .xl\:hover\:px-32:hover {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .xl\:hover\:px-36:hover {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .xl\:hover\:px-40:hover {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .xl\:hover\:px-44:hover {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+
+  .xl\:hover\:px-48:hover {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .xl\:hover\:px-52:hover {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
+  .xl\:hover\:px-56:hover {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+
+  .xl\:hover\:px-60:hover {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .xl\:hover\:px-64:hover {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  .xl\:hover\:px-72:hover {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+
+  .xl\:hover\:px-80:hover {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .xl\:hover\:px-96:hover {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .xl\:hover\:px-px:hover {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .xl\:hover\:px-0\.5:hover {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .xl\:hover\:px-1\.5:hover {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+  }
+
+  .xl\:hover\:px-2\.5:hover {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .xl\:hover\:px-3\.5:hover {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
+  .xl\:hover\:py-0:hover {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .xl\:hover\:py-1:hover {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .xl\:hover\:py-2:hover {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .xl\:hover\:py-3:hover {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .xl\:hover\:py-4:hover {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .xl\:hover\:py-5:hover {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .xl\:hover\:py-6:hover {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:hover\:py-7:hover {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .xl\:hover\:py-8:hover {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .xl\:hover\:py-9:hover {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .xl\:hover\:py-10:hover {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:hover\:py-11:hover {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .xl\:hover\:py-12:hover {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .xl\:hover\:py-14:hover {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:hover\:py-16:hover {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .xl\:hover\:py-20:hover {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .xl\:hover\:py-24:hover {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .xl\:hover\:py-28:hover {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .xl\:hover\:py-32:hover {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .xl\:hover\:py-36:hover {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .xl\:hover\:py-40:hover {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .xl\:hover\:py-44:hover {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+
+  .xl\:hover\:py-48:hover {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .xl\:hover\:py-52:hover {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .xl\:hover\:py-56:hover {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+  }
+
+  .xl\:hover\:py-60:hover {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  .xl\:hover\:py-64:hover {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .xl\:hover\:py-72:hover {
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+  }
+
+  .xl\:hover\:py-80:hover {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  .xl\:hover\:py-96:hover {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+  }
+
+  .xl\:hover\:py-px:hover {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .xl\:hover\:py-0\.5:hover {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .xl\:hover\:py-1\.5:hover {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+
+  .xl\:hover\:py-2\.5:hover {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .xl\:hover\:py-3\.5:hover {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
   }
@@ -147265,6 +154311,566 @@ video {
   }
 
   .xl\:pl-3\.5 {
+    padding-left: 0.875rem;
+  }
+
+  .xl\:hover\:pt-0:hover {
+    padding-top: 0px;
+  }
+
+  .xl\:hover\:pt-1:hover {
+    padding-top: 0.25rem;
+  }
+
+  .xl\:hover\:pt-2:hover {
+    padding-top: 0.5rem;
+  }
+
+  .xl\:hover\:pt-3:hover {
+    padding-top: 0.75rem;
+  }
+
+  .xl\:hover\:pt-4:hover {
+    padding-top: 1rem;
+  }
+
+  .xl\:hover\:pt-5:hover {
+    padding-top: 1.25rem;
+  }
+
+  .xl\:hover\:pt-6:hover {
+    padding-top: 1.5rem;
+  }
+
+  .xl\:hover\:pt-7:hover {
+    padding-top: 1.75rem;
+  }
+
+  .xl\:hover\:pt-8:hover {
+    padding-top: 2rem;
+  }
+
+  .xl\:hover\:pt-9:hover {
+    padding-top: 2.25rem;
+  }
+
+  .xl\:hover\:pt-10:hover {
+    padding-top: 2.5rem;
+  }
+
+  .xl\:hover\:pt-11:hover {
+    padding-top: 2.75rem;
+  }
+
+  .xl\:hover\:pt-12:hover {
+    padding-top: 3rem;
+  }
+
+  .xl\:hover\:pt-14:hover {
+    padding-top: 3.5rem;
+  }
+
+  .xl\:hover\:pt-16:hover {
+    padding-top: 4rem;
+  }
+
+  .xl\:hover\:pt-20:hover {
+    padding-top: 5rem;
+  }
+
+  .xl\:hover\:pt-24:hover {
+    padding-top: 6rem;
+  }
+
+  .xl\:hover\:pt-28:hover {
+    padding-top: 7rem;
+  }
+
+  .xl\:hover\:pt-32:hover {
+    padding-top: 8rem;
+  }
+
+  .xl\:hover\:pt-36:hover {
+    padding-top: 9rem;
+  }
+
+  .xl\:hover\:pt-40:hover {
+    padding-top: 10rem;
+  }
+
+  .xl\:hover\:pt-44:hover {
+    padding-top: 11rem;
+  }
+
+  .xl\:hover\:pt-48:hover {
+    padding-top: 12rem;
+  }
+
+  .xl\:hover\:pt-52:hover {
+    padding-top: 13rem;
+  }
+
+  .xl\:hover\:pt-56:hover {
+    padding-top: 14rem;
+  }
+
+  .xl\:hover\:pt-60:hover {
+    padding-top: 15rem;
+  }
+
+  .xl\:hover\:pt-64:hover {
+    padding-top: 16rem;
+  }
+
+  .xl\:hover\:pt-72:hover {
+    padding-top: 18rem;
+  }
+
+  .xl\:hover\:pt-80:hover {
+    padding-top: 20rem;
+  }
+
+  .xl\:hover\:pt-96:hover {
+    padding-top: 24rem;
+  }
+
+  .xl\:hover\:pt-px:hover {
+    padding-top: 1px;
+  }
+
+  .xl\:hover\:pt-0\.5:hover {
+    padding-top: 0.125rem;
+  }
+
+  .xl\:hover\:pt-1\.5:hover {
+    padding-top: 0.375rem;
+  }
+
+  .xl\:hover\:pt-2\.5:hover {
+    padding-top: 0.625rem;
+  }
+
+  .xl\:hover\:pt-3\.5:hover {
+    padding-top: 0.875rem;
+  }
+
+  .xl\:hover\:pr-0:hover {
+    padding-right: 0px;
+  }
+
+  .xl\:hover\:pr-1:hover {
+    padding-right: 0.25rem;
+  }
+
+  .xl\:hover\:pr-2:hover {
+    padding-right: 0.5rem;
+  }
+
+  .xl\:hover\:pr-3:hover {
+    padding-right: 0.75rem;
+  }
+
+  .xl\:hover\:pr-4:hover {
+    padding-right: 1rem;
+  }
+
+  .xl\:hover\:pr-5:hover {
+    padding-right: 1.25rem;
+  }
+
+  .xl\:hover\:pr-6:hover {
+    padding-right: 1.5rem;
+  }
+
+  .xl\:hover\:pr-7:hover {
+    padding-right: 1.75rem;
+  }
+
+  .xl\:hover\:pr-8:hover {
+    padding-right: 2rem;
+  }
+
+  .xl\:hover\:pr-9:hover {
+    padding-right: 2.25rem;
+  }
+
+  .xl\:hover\:pr-10:hover {
+    padding-right: 2.5rem;
+  }
+
+  .xl\:hover\:pr-11:hover {
+    padding-right: 2.75rem;
+  }
+
+  .xl\:hover\:pr-12:hover {
+    padding-right: 3rem;
+  }
+
+  .xl\:hover\:pr-14:hover {
+    padding-right: 3.5rem;
+  }
+
+  .xl\:hover\:pr-16:hover {
+    padding-right: 4rem;
+  }
+
+  .xl\:hover\:pr-20:hover {
+    padding-right: 5rem;
+  }
+
+  .xl\:hover\:pr-24:hover {
+    padding-right: 6rem;
+  }
+
+  .xl\:hover\:pr-28:hover {
+    padding-right: 7rem;
+  }
+
+  .xl\:hover\:pr-32:hover {
+    padding-right: 8rem;
+  }
+
+  .xl\:hover\:pr-36:hover {
+    padding-right: 9rem;
+  }
+
+  .xl\:hover\:pr-40:hover {
+    padding-right: 10rem;
+  }
+
+  .xl\:hover\:pr-44:hover {
+    padding-right: 11rem;
+  }
+
+  .xl\:hover\:pr-48:hover {
+    padding-right: 12rem;
+  }
+
+  .xl\:hover\:pr-52:hover {
+    padding-right: 13rem;
+  }
+
+  .xl\:hover\:pr-56:hover {
+    padding-right: 14rem;
+  }
+
+  .xl\:hover\:pr-60:hover {
+    padding-right: 15rem;
+  }
+
+  .xl\:hover\:pr-64:hover {
+    padding-right: 16rem;
+  }
+
+  .xl\:hover\:pr-72:hover {
+    padding-right: 18rem;
+  }
+
+  .xl\:hover\:pr-80:hover {
+    padding-right: 20rem;
+  }
+
+  .xl\:hover\:pr-96:hover {
+    padding-right: 24rem;
+  }
+
+  .xl\:hover\:pr-px:hover {
+    padding-right: 1px;
+  }
+
+  .xl\:hover\:pr-0\.5:hover {
+    padding-right: 0.125rem;
+  }
+
+  .xl\:hover\:pr-1\.5:hover {
+    padding-right: 0.375rem;
+  }
+
+  .xl\:hover\:pr-2\.5:hover {
+    padding-right: 0.625rem;
+  }
+
+  .xl\:hover\:pr-3\.5:hover {
+    padding-right: 0.875rem;
+  }
+
+  .xl\:hover\:pb-0:hover {
+    padding-bottom: 0px;
+  }
+
+  .xl\:hover\:pb-1:hover {
+    padding-bottom: 0.25rem;
+  }
+
+  .xl\:hover\:pb-2:hover {
+    padding-bottom: 0.5rem;
+  }
+
+  .xl\:hover\:pb-3:hover {
+    padding-bottom: 0.75rem;
+  }
+
+  .xl\:hover\:pb-4:hover {
+    padding-bottom: 1rem;
+  }
+
+  .xl\:hover\:pb-5:hover {
+    padding-bottom: 1.25rem;
+  }
+
+  .xl\:hover\:pb-6:hover {
+    padding-bottom: 1.5rem;
+  }
+
+  .xl\:hover\:pb-7:hover {
+    padding-bottom: 1.75rem;
+  }
+
+  .xl\:hover\:pb-8:hover {
+    padding-bottom: 2rem;
+  }
+
+  .xl\:hover\:pb-9:hover {
+    padding-bottom: 2.25rem;
+  }
+
+  .xl\:hover\:pb-10:hover {
+    padding-bottom: 2.5rem;
+  }
+
+  .xl\:hover\:pb-11:hover {
+    padding-bottom: 2.75rem;
+  }
+
+  .xl\:hover\:pb-12:hover {
+    padding-bottom: 3rem;
+  }
+
+  .xl\:hover\:pb-14:hover {
+    padding-bottom: 3.5rem;
+  }
+
+  .xl\:hover\:pb-16:hover {
+    padding-bottom: 4rem;
+  }
+
+  .xl\:hover\:pb-20:hover {
+    padding-bottom: 5rem;
+  }
+
+  .xl\:hover\:pb-24:hover {
+    padding-bottom: 6rem;
+  }
+
+  .xl\:hover\:pb-28:hover {
+    padding-bottom: 7rem;
+  }
+
+  .xl\:hover\:pb-32:hover {
+    padding-bottom: 8rem;
+  }
+
+  .xl\:hover\:pb-36:hover {
+    padding-bottom: 9rem;
+  }
+
+  .xl\:hover\:pb-40:hover {
+    padding-bottom: 10rem;
+  }
+
+  .xl\:hover\:pb-44:hover {
+    padding-bottom: 11rem;
+  }
+
+  .xl\:hover\:pb-48:hover {
+    padding-bottom: 12rem;
+  }
+
+  .xl\:hover\:pb-52:hover {
+    padding-bottom: 13rem;
+  }
+
+  .xl\:hover\:pb-56:hover {
+    padding-bottom: 14rem;
+  }
+
+  .xl\:hover\:pb-60:hover {
+    padding-bottom: 15rem;
+  }
+
+  .xl\:hover\:pb-64:hover {
+    padding-bottom: 16rem;
+  }
+
+  .xl\:hover\:pb-72:hover {
+    padding-bottom: 18rem;
+  }
+
+  .xl\:hover\:pb-80:hover {
+    padding-bottom: 20rem;
+  }
+
+  .xl\:hover\:pb-96:hover {
+    padding-bottom: 24rem;
+  }
+
+  .xl\:hover\:pb-px:hover {
+    padding-bottom: 1px;
+  }
+
+  .xl\:hover\:pb-0\.5:hover {
+    padding-bottom: 0.125rem;
+  }
+
+  .xl\:hover\:pb-1\.5:hover {
+    padding-bottom: 0.375rem;
+  }
+
+  .xl\:hover\:pb-2\.5:hover {
+    padding-bottom: 0.625rem;
+  }
+
+  .xl\:hover\:pb-3\.5:hover {
+    padding-bottom: 0.875rem;
+  }
+
+  .xl\:hover\:pl-0:hover {
+    padding-left: 0px;
+  }
+
+  .xl\:hover\:pl-1:hover {
+    padding-left: 0.25rem;
+  }
+
+  .xl\:hover\:pl-2:hover {
+    padding-left: 0.5rem;
+  }
+
+  .xl\:hover\:pl-3:hover {
+    padding-left: 0.75rem;
+  }
+
+  .xl\:hover\:pl-4:hover {
+    padding-left: 1rem;
+  }
+
+  .xl\:hover\:pl-5:hover {
+    padding-left: 1.25rem;
+  }
+
+  .xl\:hover\:pl-6:hover {
+    padding-left: 1.5rem;
+  }
+
+  .xl\:hover\:pl-7:hover {
+    padding-left: 1.75rem;
+  }
+
+  .xl\:hover\:pl-8:hover {
+    padding-left: 2rem;
+  }
+
+  .xl\:hover\:pl-9:hover {
+    padding-left: 2.25rem;
+  }
+
+  .xl\:hover\:pl-10:hover {
+    padding-left: 2.5rem;
+  }
+
+  .xl\:hover\:pl-11:hover {
+    padding-left: 2.75rem;
+  }
+
+  .xl\:hover\:pl-12:hover {
+    padding-left: 3rem;
+  }
+
+  .xl\:hover\:pl-14:hover {
+    padding-left: 3.5rem;
+  }
+
+  .xl\:hover\:pl-16:hover {
+    padding-left: 4rem;
+  }
+
+  .xl\:hover\:pl-20:hover {
+    padding-left: 5rem;
+  }
+
+  .xl\:hover\:pl-24:hover {
+    padding-left: 6rem;
+  }
+
+  .xl\:hover\:pl-28:hover {
+    padding-left: 7rem;
+  }
+
+  .xl\:hover\:pl-32:hover {
+    padding-left: 8rem;
+  }
+
+  .xl\:hover\:pl-36:hover {
+    padding-left: 9rem;
+  }
+
+  .xl\:hover\:pl-40:hover {
+    padding-left: 10rem;
+  }
+
+  .xl\:hover\:pl-44:hover {
+    padding-left: 11rem;
+  }
+
+  .xl\:hover\:pl-48:hover {
+    padding-left: 12rem;
+  }
+
+  .xl\:hover\:pl-52:hover {
+    padding-left: 13rem;
+  }
+
+  .xl\:hover\:pl-56:hover {
+    padding-left: 14rem;
+  }
+
+  .xl\:hover\:pl-60:hover {
+    padding-left: 15rem;
+  }
+
+  .xl\:hover\:pl-64:hover {
+    padding-left: 16rem;
+  }
+
+  .xl\:hover\:pl-72:hover {
+    padding-left: 18rem;
+  }
+
+  .xl\:hover\:pl-80:hover {
+    padding-left: 20rem;
+  }
+
+  .xl\:hover\:pl-96:hover {
+    padding-left: 24rem;
+  }
+
+  .xl\:hover\:pl-px:hover {
+    padding-left: 1px;
+  }
+
+  .xl\:hover\:pl-0\.5:hover {
+    padding-left: 0.125rem;
+  }
+
+  .xl\:hover\:pl-1\.5:hover {
+    padding-left: 0.375rem;
+  }
+
+  .xl\:hover\:pl-2\.5:hover {
+    padding-left: 0.625rem;
+  }
+
+  .xl\:hover\:pl-3\.5:hover {
     padding-left: 0.875rem;
   }
 
@@ -153526,6 +161132,46 @@ video {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
+  .xl\:active\:shadow-sm:active {
+    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:active\:shadow:active {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:active\:shadow-md:active {
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:active\:shadow-lg:active {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:active\:shadow-xl:active {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:active\:shadow-2xl:active {
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:active\:shadow-inner:active {
+    --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .xl\:active\:shadow-none:active {
+    --tw-shadow: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
   .xl\:outline-none {
     outline: 2px solid transparent;
     outline-offset: 2px;
@@ -156969,6 +164615,26 @@ video {
   }
 
   .\32xl\:sticky {
+    position: sticky;
+  }
+
+  .\32xl\:hover\:static:hover {
+    position: static;
+  }
+
+  .\32xl\:hover\:fixed:hover {
+    position: fixed;
+  }
+
+  .\32xl\:hover\:absolute:hover {
+    position: absolute;
+  }
+
+  .\32xl\:hover\:relative:hover {
+    position: relative;
+  }
+
+  .\32xl\:hover\:sticky:hover {
     position: sticky;
   }
 
@@ -173620,6 +181286,424 @@ video {
     background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
   }
 
+  .\32xl\:active\:bg-transparent:active {
+    background-color: transparent;
+  }
+
+  .\32xl\:active\:bg-current:active {
+    background-color: currentColor;
+  }
+
+  .\32xl\:active\:bg-black:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-white:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 250, 251, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(243, 244, 246, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(229, 231, 235, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 213, 219, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(156, 163, 175, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(107, 114, 128, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 65, 81, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-gray-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 24, 39, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 242, 242, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 226, 226, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 165, 165, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(248, 113, 113, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 68, 68, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(220, 38, 38, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(185, 28, 28, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(153, 27, 27, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-red-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(127, 29, 29, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 251, 235, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(254, 243, 199, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 230, 138, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 211, 77, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 191, 36, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 158, 11, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(217, 119, 6, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(180, 83, 9, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(146, 64, 14, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-yellow-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(120, 53, 15, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 253, 245, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(209, 250, 229, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 243, 208, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(110, 231, 183, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(52, 211, 153, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(16, 185, 129, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(5, 150, 105, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(4, 120, 87, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 95, 70, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-green-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(6, 78, 59, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(239, 246, 255, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 234, 254, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(191, 219, 254, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(147, 197, 253, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(96, 165, 250, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(59, 130, 246, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(37, 99, 235, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(29, 78, 216, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 64, 175, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-blue-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(30, 58, 138, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(238, 242, 255, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 231, 255, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(199, 210, 254, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(165, 180, 252, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(129, 140, 248, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(99, 102, 241, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(55, 48, 163, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-indigo-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(49, 46, 129, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 243, 255, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 233, 254, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(221, 214, 254, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(196, 181, 253, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(167, 139, 250, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(139, 92, 246, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(124, 58, 237, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(109, 40, 217, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(91, 33, 182, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-purple-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(76, 29, 149, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-50:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(253, 242, 248, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-100:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 231, 243, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-200:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(251, 207, 232, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-300:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(249, 168, 212, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-400:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(244, 114, 182, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-500:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(236, 72, 153, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-600:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(219, 39, 119, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-700:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(190, 24, 93, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-800:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(157, 23, 77, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:active\:bg-pink-900:active {
+    --tw-bg-opacity: 1;
+    background-color: rgba(131, 24, 67, var(--tw-bg-opacity));
+  }
+
   .\32xl\:bg-opacity-0 {
     --tw-bg-opacity: 0;
   }
@@ -177585,6 +185669,146 @@ video {
     padding: 0.875rem;
   }
 
+  .\32xl\:hover\:p-0:hover {
+    padding: 0px;
+  }
+
+  .\32xl\:hover\:p-1:hover {
+    padding: 0.25rem;
+  }
+
+  .\32xl\:hover\:p-2:hover {
+    padding: 0.5rem;
+  }
+
+  .\32xl\:hover\:p-3:hover {
+    padding: 0.75rem;
+  }
+
+  .\32xl\:hover\:p-4:hover {
+    padding: 1rem;
+  }
+
+  .\32xl\:hover\:p-5:hover {
+    padding: 1.25rem;
+  }
+
+  .\32xl\:hover\:p-6:hover {
+    padding: 1.5rem;
+  }
+
+  .\32xl\:hover\:p-7:hover {
+    padding: 1.75rem;
+  }
+
+  .\32xl\:hover\:p-8:hover {
+    padding: 2rem;
+  }
+
+  .\32xl\:hover\:p-9:hover {
+    padding: 2.25rem;
+  }
+
+  .\32xl\:hover\:p-10:hover {
+    padding: 2.5rem;
+  }
+
+  .\32xl\:hover\:p-11:hover {
+    padding: 2.75rem;
+  }
+
+  .\32xl\:hover\:p-12:hover {
+    padding: 3rem;
+  }
+
+  .\32xl\:hover\:p-14:hover {
+    padding: 3.5rem;
+  }
+
+  .\32xl\:hover\:p-16:hover {
+    padding: 4rem;
+  }
+
+  .\32xl\:hover\:p-20:hover {
+    padding: 5rem;
+  }
+
+  .\32xl\:hover\:p-24:hover {
+    padding: 6rem;
+  }
+
+  .\32xl\:hover\:p-28:hover {
+    padding: 7rem;
+  }
+
+  .\32xl\:hover\:p-32:hover {
+    padding: 8rem;
+  }
+
+  .\32xl\:hover\:p-36:hover {
+    padding: 9rem;
+  }
+
+  .\32xl\:hover\:p-40:hover {
+    padding: 10rem;
+  }
+
+  .\32xl\:hover\:p-44:hover {
+    padding: 11rem;
+  }
+
+  .\32xl\:hover\:p-48:hover {
+    padding: 12rem;
+  }
+
+  .\32xl\:hover\:p-52:hover {
+    padding: 13rem;
+  }
+
+  .\32xl\:hover\:p-56:hover {
+    padding: 14rem;
+  }
+
+  .\32xl\:hover\:p-60:hover {
+    padding: 15rem;
+  }
+
+  .\32xl\:hover\:p-64:hover {
+    padding: 16rem;
+  }
+
+  .\32xl\:hover\:p-72:hover {
+    padding: 18rem;
+  }
+
+  .\32xl\:hover\:p-80:hover {
+    padding: 20rem;
+  }
+
+  .\32xl\:hover\:p-96:hover {
+    padding: 24rem;
+  }
+
+  .\32xl\:hover\:p-px:hover {
+    padding: 1px;
+  }
+
+  .\32xl\:hover\:p-0\.5:hover {
+    padding: 0.125rem;
+  }
+
+  .\32xl\:hover\:p-1\.5:hover {
+    padding: 0.375rem;
+  }
+
+  .\32xl\:hover\:p-2\.5:hover {
+    padding: 0.625rem;
+  }
+
+  .\32xl\:hover\:p-3\.5:hover {
+    padding: 0.875rem;
+  }
+
   .\32xl\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
@@ -177931,6 +186155,356 @@ video {
   }
 
   .\32xl\:py-3\.5 {
+    padding-top: 0.875rem;
+    padding-bottom: 0.875rem;
+  }
+
+  .\32xl\:hover\:px-0:hover {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .\32xl\:hover\:px-1:hover {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  .\32xl\:hover\:px-2:hover {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .\32xl\:hover\:px-3:hover {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .\32xl\:hover\:px-4:hover {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .\32xl\:hover\:px-5:hover {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .\32xl\:hover\:px-6:hover {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .\32xl\:hover\:px-7:hover {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .\32xl\:hover\:px-8:hover {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .\32xl\:hover\:px-9:hover {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+  }
+
+  .\32xl\:hover\:px-10:hover {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .\32xl\:hover\:px-11:hover {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
+  .\32xl\:hover\:px-12:hover {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .\32xl\:hover\:px-14:hover {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .\32xl\:hover\:px-16:hover {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .\32xl\:hover\:px-20:hover {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  .\32xl\:hover\:px-24:hover {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .\32xl\:hover\:px-28:hover {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+
+  .\32xl\:hover\:px-32:hover {
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .\32xl\:hover\:px-36:hover {
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+  .\32xl\:hover\:px-40:hover {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .\32xl\:hover\:px-44:hover {
+    padding-left: 11rem;
+    padding-right: 11rem;
+  }
+
+  .\32xl\:hover\:px-48:hover {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+
+  .\32xl\:hover\:px-52:hover {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+
+  .\32xl\:hover\:px-56:hover {
+    padding-left: 14rem;
+    padding-right: 14rem;
+  }
+
+  .\32xl\:hover\:px-60:hover {
+    padding-left: 15rem;
+    padding-right: 15rem;
+  }
+
+  .\32xl\:hover\:px-64:hover {
+    padding-left: 16rem;
+    padding-right: 16rem;
+  }
+
+  .\32xl\:hover\:px-72:hover {
+    padding-left: 18rem;
+    padding-right: 18rem;
+  }
+
+  .\32xl\:hover\:px-80:hover {
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+
+  .\32xl\:hover\:px-96:hover {
+    padding-left: 24rem;
+    padding-right: 24rem;
+  }
+
+  .\32xl\:hover\:px-px:hover {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+
+  .\32xl\:hover\:px-0\.5:hover {
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .\32xl\:hover\:px-1\.5:hover {
+    padding-left: 0.375rem;
+    padding-right: 0.375rem;
+  }
+
+  .\32xl\:hover\:px-2\.5:hover {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+
+  .\32xl\:hover\:px-3\.5:hover {
+    padding-left: 0.875rem;
+    padding-right: 0.875rem;
+  }
+
+  .\32xl\:hover\:py-0:hover {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .\32xl\:hover\:py-1:hover {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+
+  .\32xl\:hover\:py-2:hover {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .\32xl\:hover\:py-3:hover {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .\32xl\:hover\:py-4:hover {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .\32xl\:hover\:py-5:hover {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .\32xl\:hover\:py-6:hover {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .\32xl\:hover\:py-7:hover {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
+  .\32xl\:hover\:py-8:hover {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .\32xl\:hover\:py-9:hover {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .\32xl\:hover\:py-10:hover {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .\32xl\:hover\:py-11:hover {
+    padding-top: 2.75rem;
+    padding-bottom: 2.75rem;
+  }
+
+  .\32xl\:hover\:py-12:hover {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .\32xl\:hover\:py-14:hover {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .\32xl\:hover\:py-16:hover {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .\32xl\:hover\:py-20:hover {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .\32xl\:hover\:py-24:hover {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .\32xl\:hover\:py-28:hover {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+
+  .\32xl\:hover\:py-32:hover {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+
+  .\32xl\:hover\:py-36:hover {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
+
+  .\32xl\:hover\:py-40:hover {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
+  .\32xl\:hover\:py-44:hover {
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+  }
+
+  .\32xl\:hover\:py-48:hover {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+
+  .\32xl\:hover\:py-52:hover {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+  }
+
+  .\32xl\:hover\:py-56:hover {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+  }
+
+  .\32xl\:hover\:py-60:hover {
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+  }
+
+  .\32xl\:hover\:py-64:hover {
+    padding-top: 16rem;
+    padding-bottom: 16rem;
+  }
+
+  .\32xl\:hover\:py-72:hover {
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+  }
+
+  .\32xl\:hover\:py-80:hover {
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+  }
+
+  .\32xl\:hover\:py-96:hover {
+    padding-top: 24rem;
+    padding-bottom: 24rem;
+  }
+
+  .\32xl\:hover\:py-px:hover {
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .\32xl\:hover\:py-0\.5:hover {
+    padding-top: 0.125rem;
+    padding-bottom: 0.125rem;
+  }
+
+  .\32xl\:hover\:py-1\.5:hover {
+    padding-top: 0.375rem;
+    padding-bottom: 0.375rem;
+  }
+
+  .\32xl\:hover\:py-2\.5:hover {
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+  }
+
+  .\32xl\:hover\:py-3\.5:hover {
     padding-top: 0.875rem;
     padding-bottom: 0.875rem;
   }
@@ -178492,6 +187066,566 @@ video {
   }
 
   .\32xl\:pl-3\.5 {
+    padding-left: 0.875rem;
+  }
+
+  .\32xl\:hover\:pt-0:hover {
+    padding-top: 0px;
+  }
+
+  .\32xl\:hover\:pt-1:hover {
+    padding-top: 0.25rem;
+  }
+
+  .\32xl\:hover\:pt-2:hover {
+    padding-top: 0.5rem;
+  }
+
+  .\32xl\:hover\:pt-3:hover {
+    padding-top: 0.75rem;
+  }
+
+  .\32xl\:hover\:pt-4:hover {
+    padding-top: 1rem;
+  }
+
+  .\32xl\:hover\:pt-5:hover {
+    padding-top: 1.25rem;
+  }
+
+  .\32xl\:hover\:pt-6:hover {
+    padding-top: 1.5rem;
+  }
+
+  .\32xl\:hover\:pt-7:hover {
+    padding-top: 1.75rem;
+  }
+
+  .\32xl\:hover\:pt-8:hover {
+    padding-top: 2rem;
+  }
+
+  .\32xl\:hover\:pt-9:hover {
+    padding-top: 2.25rem;
+  }
+
+  .\32xl\:hover\:pt-10:hover {
+    padding-top: 2.5rem;
+  }
+
+  .\32xl\:hover\:pt-11:hover {
+    padding-top: 2.75rem;
+  }
+
+  .\32xl\:hover\:pt-12:hover {
+    padding-top: 3rem;
+  }
+
+  .\32xl\:hover\:pt-14:hover {
+    padding-top: 3.5rem;
+  }
+
+  .\32xl\:hover\:pt-16:hover {
+    padding-top: 4rem;
+  }
+
+  .\32xl\:hover\:pt-20:hover {
+    padding-top: 5rem;
+  }
+
+  .\32xl\:hover\:pt-24:hover {
+    padding-top: 6rem;
+  }
+
+  .\32xl\:hover\:pt-28:hover {
+    padding-top: 7rem;
+  }
+
+  .\32xl\:hover\:pt-32:hover {
+    padding-top: 8rem;
+  }
+
+  .\32xl\:hover\:pt-36:hover {
+    padding-top: 9rem;
+  }
+
+  .\32xl\:hover\:pt-40:hover {
+    padding-top: 10rem;
+  }
+
+  .\32xl\:hover\:pt-44:hover {
+    padding-top: 11rem;
+  }
+
+  .\32xl\:hover\:pt-48:hover {
+    padding-top: 12rem;
+  }
+
+  .\32xl\:hover\:pt-52:hover {
+    padding-top: 13rem;
+  }
+
+  .\32xl\:hover\:pt-56:hover {
+    padding-top: 14rem;
+  }
+
+  .\32xl\:hover\:pt-60:hover {
+    padding-top: 15rem;
+  }
+
+  .\32xl\:hover\:pt-64:hover {
+    padding-top: 16rem;
+  }
+
+  .\32xl\:hover\:pt-72:hover {
+    padding-top: 18rem;
+  }
+
+  .\32xl\:hover\:pt-80:hover {
+    padding-top: 20rem;
+  }
+
+  .\32xl\:hover\:pt-96:hover {
+    padding-top: 24rem;
+  }
+
+  .\32xl\:hover\:pt-px:hover {
+    padding-top: 1px;
+  }
+
+  .\32xl\:hover\:pt-0\.5:hover {
+    padding-top: 0.125rem;
+  }
+
+  .\32xl\:hover\:pt-1\.5:hover {
+    padding-top: 0.375rem;
+  }
+
+  .\32xl\:hover\:pt-2\.5:hover {
+    padding-top: 0.625rem;
+  }
+
+  .\32xl\:hover\:pt-3\.5:hover {
+    padding-top: 0.875rem;
+  }
+
+  .\32xl\:hover\:pr-0:hover {
+    padding-right: 0px;
+  }
+
+  .\32xl\:hover\:pr-1:hover {
+    padding-right: 0.25rem;
+  }
+
+  .\32xl\:hover\:pr-2:hover {
+    padding-right: 0.5rem;
+  }
+
+  .\32xl\:hover\:pr-3:hover {
+    padding-right: 0.75rem;
+  }
+
+  .\32xl\:hover\:pr-4:hover {
+    padding-right: 1rem;
+  }
+
+  .\32xl\:hover\:pr-5:hover {
+    padding-right: 1.25rem;
+  }
+
+  .\32xl\:hover\:pr-6:hover {
+    padding-right: 1.5rem;
+  }
+
+  .\32xl\:hover\:pr-7:hover {
+    padding-right: 1.75rem;
+  }
+
+  .\32xl\:hover\:pr-8:hover {
+    padding-right: 2rem;
+  }
+
+  .\32xl\:hover\:pr-9:hover {
+    padding-right: 2.25rem;
+  }
+
+  .\32xl\:hover\:pr-10:hover {
+    padding-right: 2.5rem;
+  }
+
+  .\32xl\:hover\:pr-11:hover {
+    padding-right: 2.75rem;
+  }
+
+  .\32xl\:hover\:pr-12:hover {
+    padding-right: 3rem;
+  }
+
+  .\32xl\:hover\:pr-14:hover {
+    padding-right: 3.5rem;
+  }
+
+  .\32xl\:hover\:pr-16:hover {
+    padding-right: 4rem;
+  }
+
+  .\32xl\:hover\:pr-20:hover {
+    padding-right: 5rem;
+  }
+
+  .\32xl\:hover\:pr-24:hover {
+    padding-right: 6rem;
+  }
+
+  .\32xl\:hover\:pr-28:hover {
+    padding-right: 7rem;
+  }
+
+  .\32xl\:hover\:pr-32:hover {
+    padding-right: 8rem;
+  }
+
+  .\32xl\:hover\:pr-36:hover {
+    padding-right: 9rem;
+  }
+
+  .\32xl\:hover\:pr-40:hover {
+    padding-right: 10rem;
+  }
+
+  .\32xl\:hover\:pr-44:hover {
+    padding-right: 11rem;
+  }
+
+  .\32xl\:hover\:pr-48:hover {
+    padding-right: 12rem;
+  }
+
+  .\32xl\:hover\:pr-52:hover {
+    padding-right: 13rem;
+  }
+
+  .\32xl\:hover\:pr-56:hover {
+    padding-right: 14rem;
+  }
+
+  .\32xl\:hover\:pr-60:hover {
+    padding-right: 15rem;
+  }
+
+  .\32xl\:hover\:pr-64:hover {
+    padding-right: 16rem;
+  }
+
+  .\32xl\:hover\:pr-72:hover {
+    padding-right: 18rem;
+  }
+
+  .\32xl\:hover\:pr-80:hover {
+    padding-right: 20rem;
+  }
+
+  .\32xl\:hover\:pr-96:hover {
+    padding-right: 24rem;
+  }
+
+  .\32xl\:hover\:pr-px:hover {
+    padding-right: 1px;
+  }
+
+  .\32xl\:hover\:pr-0\.5:hover {
+    padding-right: 0.125rem;
+  }
+
+  .\32xl\:hover\:pr-1\.5:hover {
+    padding-right: 0.375rem;
+  }
+
+  .\32xl\:hover\:pr-2\.5:hover {
+    padding-right: 0.625rem;
+  }
+
+  .\32xl\:hover\:pr-3\.5:hover {
+    padding-right: 0.875rem;
+  }
+
+  .\32xl\:hover\:pb-0:hover {
+    padding-bottom: 0px;
+  }
+
+  .\32xl\:hover\:pb-1:hover {
+    padding-bottom: 0.25rem;
+  }
+
+  .\32xl\:hover\:pb-2:hover {
+    padding-bottom: 0.5rem;
+  }
+
+  .\32xl\:hover\:pb-3:hover {
+    padding-bottom: 0.75rem;
+  }
+
+  .\32xl\:hover\:pb-4:hover {
+    padding-bottom: 1rem;
+  }
+
+  .\32xl\:hover\:pb-5:hover {
+    padding-bottom: 1.25rem;
+  }
+
+  .\32xl\:hover\:pb-6:hover {
+    padding-bottom: 1.5rem;
+  }
+
+  .\32xl\:hover\:pb-7:hover {
+    padding-bottom: 1.75rem;
+  }
+
+  .\32xl\:hover\:pb-8:hover {
+    padding-bottom: 2rem;
+  }
+
+  .\32xl\:hover\:pb-9:hover {
+    padding-bottom: 2.25rem;
+  }
+
+  .\32xl\:hover\:pb-10:hover {
+    padding-bottom: 2.5rem;
+  }
+
+  .\32xl\:hover\:pb-11:hover {
+    padding-bottom: 2.75rem;
+  }
+
+  .\32xl\:hover\:pb-12:hover {
+    padding-bottom: 3rem;
+  }
+
+  .\32xl\:hover\:pb-14:hover {
+    padding-bottom: 3.5rem;
+  }
+
+  .\32xl\:hover\:pb-16:hover {
+    padding-bottom: 4rem;
+  }
+
+  .\32xl\:hover\:pb-20:hover {
+    padding-bottom: 5rem;
+  }
+
+  .\32xl\:hover\:pb-24:hover {
+    padding-bottom: 6rem;
+  }
+
+  .\32xl\:hover\:pb-28:hover {
+    padding-bottom: 7rem;
+  }
+
+  .\32xl\:hover\:pb-32:hover {
+    padding-bottom: 8rem;
+  }
+
+  .\32xl\:hover\:pb-36:hover {
+    padding-bottom: 9rem;
+  }
+
+  .\32xl\:hover\:pb-40:hover {
+    padding-bottom: 10rem;
+  }
+
+  .\32xl\:hover\:pb-44:hover {
+    padding-bottom: 11rem;
+  }
+
+  .\32xl\:hover\:pb-48:hover {
+    padding-bottom: 12rem;
+  }
+
+  .\32xl\:hover\:pb-52:hover {
+    padding-bottom: 13rem;
+  }
+
+  .\32xl\:hover\:pb-56:hover {
+    padding-bottom: 14rem;
+  }
+
+  .\32xl\:hover\:pb-60:hover {
+    padding-bottom: 15rem;
+  }
+
+  .\32xl\:hover\:pb-64:hover {
+    padding-bottom: 16rem;
+  }
+
+  .\32xl\:hover\:pb-72:hover {
+    padding-bottom: 18rem;
+  }
+
+  .\32xl\:hover\:pb-80:hover {
+    padding-bottom: 20rem;
+  }
+
+  .\32xl\:hover\:pb-96:hover {
+    padding-bottom: 24rem;
+  }
+
+  .\32xl\:hover\:pb-px:hover {
+    padding-bottom: 1px;
+  }
+
+  .\32xl\:hover\:pb-0\.5:hover {
+    padding-bottom: 0.125rem;
+  }
+
+  .\32xl\:hover\:pb-1\.5:hover {
+    padding-bottom: 0.375rem;
+  }
+
+  .\32xl\:hover\:pb-2\.5:hover {
+    padding-bottom: 0.625rem;
+  }
+
+  .\32xl\:hover\:pb-3\.5:hover {
+    padding-bottom: 0.875rem;
+  }
+
+  .\32xl\:hover\:pl-0:hover {
+    padding-left: 0px;
+  }
+
+  .\32xl\:hover\:pl-1:hover {
+    padding-left: 0.25rem;
+  }
+
+  .\32xl\:hover\:pl-2:hover {
+    padding-left: 0.5rem;
+  }
+
+  .\32xl\:hover\:pl-3:hover {
+    padding-left: 0.75rem;
+  }
+
+  .\32xl\:hover\:pl-4:hover {
+    padding-left: 1rem;
+  }
+
+  .\32xl\:hover\:pl-5:hover {
+    padding-left: 1.25rem;
+  }
+
+  .\32xl\:hover\:pl-6:hover {
+    padding-left: 1.5rem;
+  }
+
+  .\32xl\:hover\:pl-7:hover {
+    padding-left: 1.75rem;
+  }
+
+  .\32xl\:hover\:pl-8:hover {
+    padding-left: 2rem;
+  }
+
+  .\32xl\:hover\:pl-9:hover {
+    padding-left: 2.25rem;
+  }
+
+  .\32xl\:hover\:pl-10:hover {
+    padding-left: 2.5rem;
+  }
+
+  .\32xl\:hover\:pl-11:hover {
+    padding-left: 2.75rem;
+  }
+
+  .\32xl\:hover\:pl-12:hover {
+    padding-left: 3rem;
+  }
+
+  .\32xl\:hover\:pl-14:hover {
+    padding-left: 3.5rem;
+  }
+
+  .\32xl\:hover\:pl-16:hover {
+    padding-left: 4rem;
+  }
+
+  .\32xl\:hover\:pl-20:hover {
+    padding-left: 5rem;
+  }
+
+  .\32xl\:hover\:pl-24:hover {
+    padding-left: 6rem;
+  }
+
+  .\32xl\:hover\:pl-28:hover {
+    padding-left: 7rem;
+  }
+
+  .\32xl\:hover\:pl-32:hover {
+    padding-left: 8rem;
+  }
+
+  .\32xl\:hover\:pl-36:hover {
+    padding-left: 9rem;
+  }
+
+  .\32xl\:hover\:pl-40:hover {
+    padding-left: 10rem;
+  }
+
+  .\32xl\:hover\:pl-44:hover {
+    padding-left: 11rem;
+  }
+
+  .\32xl\:hover\:pl-48:hover {
+    padding-left: 12rem;
+  }
+
+  .\32xl\:hover\:pl-52:hover {
+    padding-left: 13rem;
+  }
+
+  .\32xl\:hover\:pl-56:hover {
+    padding-left: 14rem;
+  }
+
+  .\32xl\:hover\:pl-60:hover {
+    padding-left: 15rem;
+  }
+
+  .\32xl\:hover\:pl-64:hover {
+    padding-left: 16rem;
+  }
+
+  .\32xl\:hover\:pl-72:hover {
+    padding-left: 18rem;
+  }
+
+  .\32xl\:hover\:pl-80:hover {
+    padding-left: 20rem;
+  }
+
+  .\32xl\:hover\:pl-96:hover {
+    padding-left: 24rem;
+  }
+
+  .\32xl\:hover\:pl-px:hover {
+    padding-left: 1px;
+  }
+
+  .\32xl\:hover\:pl-0\.5:hover {
+    padding-left: 0.125rem;
+  }
+
+  .\32xl\:hover\:pl-1\.5:hover {
+    padding-left: 0.375rem;
+  }
+
+  .\32xl\:hover\:pl-2\.5:hover {
+    padding-left: 0.625rem;
+  }
+
+  .\32xl\:hover\:pl-3\.5:hover {
     padding-left: 0.875rem;
   }
 
@@ -184749,6 +193883,46 @@ video {
   }
 
   .\32xl\:focus\:shadow-none:focus {
+    --tw-shadow: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .\32xl\:active\:shadow-sm:active {
+    --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .\32xl\:active\:shadow:active {
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .\32xl\:active\:shadow-md:active {
+    --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .\32xl\:active\:shadow-lg:active {
+    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .\32xl\:active\:shadow-xl:active {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .\32xl\:active\:shadow-2xl:active {
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .\32xl\:active\:shadow-inner:active {
+    --tw-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .\32xl\:active\:shadow-none:active {
     --tw-shadow: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }

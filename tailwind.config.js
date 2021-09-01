@@ -11,7 +11,10 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+      boxShadow: ['active'],
+    },
   },
   plugins: [],
 }

@@ -10,7 +10,7 @@
     background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 42%, rgba(255,237,213,1) 42%);
 }
 .btn {
-    @apply inline-block bg-blue-400 text-center text-white px-6 py-2 rounded-md btn-shadow;
+    @apply inline-block bg-blue-400 text-center text-white px-6 py-2 rounded-md btn-shadow transition duration-200;
 }
 .btn:hover {
     @apply bg-blue-500;
